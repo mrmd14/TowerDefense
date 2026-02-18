@@ -18,10 +18,11 @@ public class EnemyMovement : MonoBehaviour
     private int currentWaypointIndex;
     private bool hasReachedGoal;
 
-    private void Start()
+    private void OnEnable()
     {
-        pathManager = PathManager.Instance;
+        pathManager = PathManager.Instance ?? FindFirstObjectByType<PathManager>();
         currentWaypointIndex = 0;
+        hasReachedGoal = false;
 
         // Fail fast when the path source is not available.
         if (pathManager == null)
@@ -122,7 +123,7 @@ public class EnemyMovement : MonoBehaviour
 
         if (destroyOnGoal)
         {
-            Destroy(gameObject);
+            CentralObjectPool.DespawnEnemy(this);
         }
     }
 }

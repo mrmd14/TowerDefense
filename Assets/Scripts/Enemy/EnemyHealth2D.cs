@@ -19,6 +19,11 @@ public class EnemyHealth2D : MonoBehaviour, IDamageable
         currentHP = maxHP;
     }
 
+    private void OnEnable()
+    {
+        currentHP = Mathf.Max(1, maxHP);
+    }
+
     public void TakeDamage(int amount)
     {
         if (amount <= 0 || currentHP <= 0)
@@ -39,7 +44,7 @@ public class EnemyHealth2D : MonoBehaviour, IDamageable
         currentHP = 0;
         OnDied?.Invoke(this);
         OnAnyEnemyDied?.Invoke(this);
-        Destroy(gameObject);
+        CentralObjectPool.Despawn(gameObject);
     }
 
     private void OnValidate()

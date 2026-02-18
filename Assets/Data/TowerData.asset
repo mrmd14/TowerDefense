@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TowerData
   prefab: {fileID: 3553733725781256149, guid: eb4b87750c842ac4aa0f5b071bd7127a, type: 3}
   icon: {fileID: -1732333408797366551, guid: 0c80ec97fcf39784eb13b2e6035adb36, type: 3}
-  cost: 10
+  cost: 100
   footprintSize: {x: 1, y: 1}

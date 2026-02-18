@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1147358474789221231}
   - component: {fileID: 7010610197478045153}
-  - component: {fileID: 4722433110269375409}
-  - component: {fileID: 1864203073244746742}
+  - component: {fileID: 6941760044416398633}
+  - component: {fileID: 3731118421688788880}
   m_Layer: 0
   m_Name: prjectile
   m_TagString: Untagged
@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 0.4166, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -83,17 +83,17 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: 2fa9f3d86990a8445bcd9fffc2657701, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 05f30a57fb81c0446b8eed9a26fc9e36, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.51666665, y: 0.475}
+  m_Size: {x: 0.068, y: 0.548}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &4722433110269375409
+--- !u!114 &6941760044416398633
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -102,15 +102,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 4075417204026338745}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0353db5d4f5808a4faf80b69e69af2c0, type: 3}
+  m_Script: {fileID: 11500000, guid: f3a1d70e3e04409ba584c6983b2941d6, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Projectile2D
-  speed: 5
+  m_EditorClassIdentifier: Assembly-CSharp::ArrowProjectile2D
+  arcHeight: 0.35
+  arcHeightPerUnitDistance: 0.35
+  gravityScale: 2
   hitDistance: 0.15
   maxLifetime: 4
   useTriggerHit: 1
---- !u!58 &1864203073244746742
-CircleCollider2D:
+  zRotationOffset: 0
+  minDirectionSqrMagnitude: 0.000001
+--- !u!70 &3731118421688788880
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -144,4 +148,5 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.25833333
+  m_Size: {x: 0.068, y: 0.5479999}
+  m_Direction: 0

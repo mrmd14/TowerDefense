@@ -231,7 +231,7 @@ public class TilemapPlacement2D : MonoBehaviour
             return false;
         }
 
-        Instantiate(selectedTower.Prefab, cellCenter, Quaternion.identity);
+        CentralObjectPool.SpawnTower(selectedTower.Prefab, cellCenter, Quaternion.identity);
         occupiedCells.Add(cell);
         return true;
     }

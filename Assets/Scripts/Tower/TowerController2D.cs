@@ -35,6 +35,13 @@ public class TowerController2D : MonoBehaviour
         damage = Mathf.Max(1, damage);
     }
 
+    protected virtual void OnEnable()
+    {
+        currentTarget = null;
+        scanTimer = 0f;
+        fireTimer = 0f;
+    }
+
     private void Update()
     {
         if (!enabled)
@@ -127,7 +134,7 @@ public class TowerController2D : MonoBehaviour
         transform.rotation = Quaternion.Euler(0f, 0f, angle);
     }
 
-    private void Shoot(Transform target)
+    protected virtual void Shoot(Transform target)
     {
         if (target == null)
         {
@@ -135,8 +142,11 @@ public class TowerController2D : MonoBehaviour
         }
 
         Vector3 spawnPosition = firePoint != null ? firePoint.position : transform.position;
-        Projectile2D projectile = Instantiate(projectilePrefab, spawnPosition, Quaternion.identity);
-        projectile.Init(target, damage);
+        Projectile2D projectile = CentralObjectPool.SpawnProjectile(projectilePrefab, spawnPosition, Quaternion.identity);
+        if (projectile != null)
+        {
+            projectile.Init(target, damage);
+        }
     }
 
     private void OnDrawGizmosSelected()
