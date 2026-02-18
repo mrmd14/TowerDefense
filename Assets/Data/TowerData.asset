@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3211217268f7e4b4da43eb6d6ca8f703, type: 3}
+  m_Name: TowerData
+  m_EditorClassIdentifier: Assembly-CSharp::TowerData
+  prefab: {fileID: 3553733725781256149, guid: eb4b87750c842ac4aa0f5b071bd7127a, type: 3}
+  icon: {fileID: -1732333408797366551, guid: 0c80ec97fcf39784eb13b2e6035adb36, type: 3}
+  cost: 10
+  footprintSize: {x: 1, y: 1}
