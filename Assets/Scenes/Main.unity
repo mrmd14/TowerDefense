@@ -119,6 +119,84 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &28749103
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 28749104}
+  - component: {fileID: 28749105}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &28749104
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28749103}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 911044793}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &28749105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28749103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5521f09256064ff49990910ad91cbd2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TowerUpgradeButtonUI
+  panelRoot: {fileID: 2822287789399432494}
+  upgradeButton: {fileID: 5764988489984106238}
+  costLabel: {fileID: 3092269608186626500}
+  parentCanvas: {fileID: 973472796}
+  worldCamera: {fileID: 519420031}
+  currencyManager: {fileID: 868501384}
+  worldOffset: {x: 0, y: 1.4, z: 0}
+  costPrefix: 
+  showDuration: 0.16
+  showStartScaleMultiplier: 0.65
+  showScaleCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &70176943
 GameObject:
   m_ObjectHideFlags: 0
@@ -3623,6 +3701,7 @@ Transform:
   - {fileID: 599381754}
   - {fileID: 616513377}
   - {fileID: 70176945}
+  - {fileID: 28749104}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &947030844
@@ -8043,7 +8122,6 @@ GameObject:
   - component: {fileID: 1920164392521015794}
   - component: {fileID: 5554902475098035646}
   - component: {fileID: 5764988489984106238}
-  - component: {fileID: 7860333757724733724}
   m_Layer: 5
   m_Name: towerUpgrade
   m_TagString: Untagged
@@ -8155,52 +8233,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &7860333757724733724
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4597146764871962375}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5521f09256064ff49990910ad91cbd2e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TowerUpgradeButtonUI
-  panelRoot: {fileID: 2822287789399432494}
-  upgradeButton: {fileID: 5764988489984106238}
-  costLabel: {fileID: 3092269608186626500}
-  parentCanvas: {fileID: 973472796}
-  worldCamera: {fileID: 519420031}
-  currencyManager: {fileID: 868501384}
-  worldOffset: {x: 0, y: 1.4, z: 0}
-  costPrefix: 
-  showDuration: 0.16
-  showStartScaleMultiplier: 0.65
-  showScaleCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!222 &8107829360819491346
 CanvasRenderer:
   m_ObjectHideFlags: 0
