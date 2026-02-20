@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TowerData
   prefab: {fileID: 3553733725781256149, guid: b9596c5407e54f61bdfbbb9b91c51ecd, type: 3}
   icon: {fileID: -1732333408797366551, guid: 0c80ec97fcf39784eb13b2e6035adb36, type: 3}
-  cost: 150
+  cost: 70
   affordableButtonSprite: {fileID: -6419061859346443435, guid: a3fd5e98789ea504da48e59adcb937ad, type: 3}
   unaffordableButtonSprite: {fileID: 2741238486648975402, guid: a3fd5e98789ea504da48e59adcb937ad, type: 3}
   range: 4

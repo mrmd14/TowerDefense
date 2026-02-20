@@ -12,8 +12,17 @@ public class MoneyUI : MonoBehaviour
     [SerializeField] private float warningDuration = 1.25f;
     [SerializeField] private string warningText = "Not enough money";
 
+    [Header("Money Change Animation")]
+    [SerializeField, Min(1f)] private float moneyPopScale = 1.2f;
+    [SerializeField, Min(0.01f)] private float moneyScaleLerpDuration = 0.18f;
+    [SerializeField] private AnimationCurve moneyScaleCurve = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
+
     private CurrencyManager subscribedCurrencyManager;
     private Coroutine warningRoutine;
+    private Coroutine moneyChangeRoutine;
+    private Vector3 moneyBaseScale = Vector3.one;
+    private int displayedMoney;
+    private bool hasDisplayedMoney;
 
     private void Awake()
     {
@@ -24,6 +33,11 @@ public class MoneyUI : MonoBehaviour
         }
 
         Instance = this;
+
+        if (moneyLabel != null)
+        {
+            moneyBaseScale = moneyLabel.rectTransform.localScale;
+        }
 
         if (warningLabel != null)
         {
@@ -49,6 +63,17 @@ public class MoneyUI : MonoBehaviour
         {
             StopCoroutine(warningRoutine);
             warningRoutine = null;
+        }
+
+        if (moneyChangeRoutine != null)
+        {
+            StopCoroutine(moneyChangeRoutine);
+            moneyChangeRoutine = null;
+        }
+
+        if (moneyLabel != null)
+        {
+            moneyLabel.rectTransform.localScale = moneyBaseScale;
         }
 
         if (warningLabel != null)
@@ -122,7 +147,27 @@ public class MoneyUI : MonoBehaviour
             return;
         }
 
-        moneyLabel.text = $"{newMoney}";
+        if (!hasDisplayedMoney)
+        {
+            hasDisplayedMoney = true;
+            displayedMoney = newMoney;
+            SetMoneyLabel(newMoney);
+            return;
+        }
+
+        if (newMoney == displayedMoney)
+        {
+            return;
+        }
+
+        SetMoneyLabel(newMoney);
+
+        if (moneyChangeRoutine != null)
+        {
+            StopCoroutine(moneyChangeRoutine);
+        }
+
+        moneyChangeRoutine = StartCoroutine(AnimateMoneyScaleRoutine());
     }
 
     private IEnumerator ShowWarningRoutine()
@@ -134,5 +179,36 @@ public class MoneyUI : MonoBehaviour
 
         warningLabel.gameObject.SetActive(false);
         warningRoutine = null;
+    }
+
+    private IEnumerator AnimateMoneyScaleRoutine()
+    {
+        RectTransform labelRect = moneyLabel.rectTransform;
+        Vector3 targetScale = moneyBaseScale;
+        Vector3 popScale = moneyBaseScale * Mathf.Max(1f, moneyPopScale);
+        labelRect.localScale = popScale;
+
+        float elapsed = 0f;
+        float duration = Mathf.Max(0.01f, moneyScaleLerpDuration);
+
+        while (elapsed < duration)
+        {
+            elapsed += Time.unscaledDeltaTime;
+
+            float normalizedT = Mathf.Clamp01(elapsed / duration);
+            float curveT = moneyScaleCurve == null ? normalizedT : moneyScaleCurve.Evaluate(normalizedT);
+            labelRect.localScale = Vector3.LerpUnclamped(popScale, targetScale, curveT);
+
+            yield return null;
+        }
+
+        labelRect.localScale = targetScale;
+        moneyChangeRoutine = null;
+    }
+
+    private void SetMoneyLabel(int value)
+    {
+        displayedMoney = value;
+        moneyLabel.text = value.ToString();
     }
 }

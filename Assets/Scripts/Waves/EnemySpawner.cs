@@ -22,6 +22,9 @@ public class EnemySpawner : MonoBehaviour
     [Header("References")]
     [SerializeField] private PathManager pathManager;
 
+    [Header("Spawn Variation")]
+    [SerializeField, Min(0f)] private float spawnRandomXRange = 0.25f;
+
     public event Action<EnemyMovement> OnEnemySpawned;
     public event Action<EnemyMovement> OnEnemyReachedGoal;
     public event Action<EnemyMovement> OnEnemyRemoved;
@@ -136,7 +139,9 @@ public class EnemySpawner : MonoBehaviour
                         break;
                     }
 
-                    SpawnEnemy(instruction.Prefab, spawnPosition);
+                    float lateralOffset = GetRandomLateralSpawnOffset();
+                    Vector3 randomizedSpawnPosition = GetSpawnPositionWithLateralOffset(spawnPosition, lateralOffset);
+                    SpawnEnemy(instruction.Prefab, randomizedSpawnPosition, lateralOffset);
 
                     bool isLastInstruction = instructionIndex >= spawnInstructions.Count - 1;
                     bool isLastCount = countIndex >= instruction.Count - 1;
@@ -176,7 +181,7 @@ public class EnemySpawner : MonoBehaviour
         OnWaveSpawnCompleted?.Invoke();
     }
 
-    private void SpawnEnemy(GameObject enemyPrefab, Vector3 spawnPosition)
+    private void SpawnEnemy(GameObject enemyPrefab, Vector3 spawnPosition, float lateralOffset)
     {
         GameObject enemyObject = CentralObjectPool.Spawn(enemyPrefab, spawnPosition, Quaternion.identity);
         if (enemyObject == null)
@@ -188,6 +193,7 @@ public class EnemySpawner : MonoBehaviour
 
         if (movement != null)
         {
+            movement.ConfigureSpawn(spawnPosition, lateralOffset);
             TrackEnemy(movement);
             OnEnemySpawned?.Invoke(movement);
         }
@@ -197,6 +203,38 @@ public class EnemySpawner : MonoBehaviour
         }
 
         SpawnedEnemiesCount++;
+    }
+
+    private float GetRandomLateralSpawnOffset()
+    {
+        float range = Mathf.Max(0f, spawnRandomXRange);
+        if (range <= 0f)
+        {
+            return 0f;
+        }
+
+        return UnityEngine.Random.Range(-range, range);
+    }
+
+    private Vector3 GetSpawnPositionWithLateralOffset(Vector3 baseSpawnPosition, float lateralOffset)
+    {
+        if (Mathf.Abs(lateralOffset) <= 0.0001f)
+        {
+            return baseSpawnPosition;
+        }
+
+        Vector3 segmentDirection = Vector3.right;
+        if (pathManager != null && pathManager.WaypointCount > 1)
+        {
+            Vector3 firstSegment = pathManager.GetWaypointPosition(1) - pathManager.GetWaypointPosition(0);
+            if (firstSegment.sqrMagnitude > 0.0001f)
+            {
+                segmentDirection = firstSegment.normalized;
+            }
+        }
+
+        Vector3 lateral = new Vector3(-segmentDirection.y, segmentDirection.x, 0f).normalized;
+        return baseSpawnPosition + lateral * lateralOffset;
     }
 
     private List<SpawnInstruction> BuildSpawnInstructions(WaveConfig wave, GameObject enemyPrefabOverride)

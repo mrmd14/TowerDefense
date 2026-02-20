@@ -18,6 +18,12 @@ public class EnemyGfxManager : MonoBehaviour
     [Header("Hit Flash")]
     [SerializeField] private float hitFlashDuration = 0.08f;
 
+    [Header("Sorting")]
+    [SerializeField] private bool sortByYPosition = true;
+    [SerializeField, Min(1)] private int sortingOrderPerWorldUnit = 100;
+    [SerializeField] private int sortingOrderOffset;
+    [SerializeField] private Transform sortingReference;
+
     private Coroutine fadeCoroutine;
     private Coroutine hitFlashCoroutine;
     private Color visibleColor = Color.white;
@@ -25,6 +31,7 @@ public class EnemyGfxManager : MonoBehaviour
     private MaterialPropertyBlock propertyBlock;
     private int hitFlashPropertyId;
     private bool materialSupportsHitFlash;
+    private int baseSortingOrder;
 
     private void Awake()
     {
@@ -40,6 +47,13 @@ public class EnemyGfxManager : MonoBehaviour
             && spriteRenderer.sharedMaterial.HasProperty(hitFlashPropertyId);
 
         CacheVisibleColor();
+        CacheBaseSortingOrder();
+        ResolveSortingReference();
+    }
+
+    private void OnEnable()
+    {
+        UpdateSortingOrderFromY();
     }
 
     private void OnDisable()
@@ -62,6 +76,11 @@ public class EnemyGfxManager : MonoBehaviour
         }
 
         SetHitFlashAmount(0f);
+    }
+
+    private void LateUpdate()
+    {
+        UpdateSortingOrderFromY();
     }
 
     public void PlaySpawnFadeIn()
@@ -216,5 +235,39 @@ public class EnemyGfxManager : MonoBehaviour
         spriteRenderer.GetPropertyBlock(propertyBlock);
         propertyBlock.SetFloat(hitFlashPropertyId, Mathf.Clamp01(value));
         spriteRenderer.SetPropertyBlock(propertyBlock);
+    }
+
+    private void CacheBaseSortingOrder()
+    {
+        if (spriteRenderer == null)
+        {
+            return;
+        }
+
+        baseSortingOrder = spriteRenderer.sortingOrder;
+    }
+
+    private void ResolveSortingReference()
+    {
+        if (sortingReference != null)
+        {
+            return;
+        }
+
+        sortingReference = transform.parent != null ? transform.parent : transform;
+    }
+
+    private void UpdateSortingOrderFromY()
+    {
+        if (!sortByYPosition || spriteRenderer == null)
+        {
+            return;
+        }
+
+        ResolveSortingReference();
+
+        float y = sortingReference != null ? sortingReference.position.y : transform.position.y;
+        int orderFromY = Mathf.RoundToInt(-y * Mathf.Max(1, sortingOrderPerWorldUnit));
+        spriteRenderer.sortingOrder = baseSortingOrder + sortingOrderOffset + orderFromY;
     }
 }

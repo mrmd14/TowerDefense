@@ -23,12 +23,16 @@ public class EnemyMovement : MonoBehaviour
     private int currentWaypointIndex;
     private bool hasReachedGoal;
     private Vector3 currentVelocity;
+    private float pathLateralOffset;
+    private bool useCustomPathOffset;
 
     private void OnEnable()
     {
         pathManager = PathManager.Instance ?? FindFirstObjectByType<PathManager>();
         currentWaypointIndex = 0;
         hasReachedGoal = false;
+        pathLateralOffset = 0f;
+        useCustomPathOffset = false;
 
         // Fail fast when the path source is not available.
         if (pathManager == null)
@@ -66,6 +70,16 @@ public class EnemyMovement : MonoBehaviour
         enemyGfxManager?.PlaySpawnFadeIn();
     }
 
+    public void ConfigureSpawn(Vector3 spawnPosition, float lateralOffset)
+    {
+        transform.position = spawnPosition;
+        currentWaypointIndex = 0;
+        hasReachedGoal = false;
+        pathLateralOffset = lateralOffset;
+        useCustomPathOffset = Mathf.Abs(lateralOffset) > 0.0001f;
+        InitializeVelocity();
+    }
+
     private void Update()
     {
         if (!enabled || hasReachedGoal)
@@ -74,8 +88,7 @@ public class EnemyMovement : MonoBehaviour
         }
 
         // Read the active waypoint and move toward it each frame.
-        Transform targetWaypoint = pathManager.GetWaypoint(currentWaypointIndex);
-        if (targetWaypoint == null)
+        if (!TryGetWaypointTargetPosition(currentWaypointIndex, out Vector3 targetPosition, out Vector3 segmentDirection))
         {
             Debug.LogError($"Waypoint {currentWaypointIndex} is null. Skipping to next waypoint.", this);
             AdvanceToNextWaypoint();
@@ -85,7 +98,7 @@ public class EnemyMovement : MonoBehaviour
         float waypointReachDistance = Mathf.Max(0f, reachDistance);
 
         // If we start exactly on a waypoint, advance first so we do not stall on spawn.
-        if (ShouldAdvanceWaypoint(targetWaypoint, waypointReachDistance))
+        if (ShouldAdvanceWaypoint(targetPosition, segmentDirection, waypointReachDistance))
         {
             AdvanceToNextWaypoint();
             if (hasReachedGoal)
@@ -93,8 +106,7 @@ public class EnemyMovement : MonoBehaviour
                 return;
             }
 
-            targetWaypoint = pathManager.GetWaypoint(currentWaypointIndex);
-            if (targetWaypoint == null)
+            if (!TryGetWaypointTargetPosition(currentWaypointIndex, out targetPosition, out segmentDirection))
             {
                 Debug.LogError($"Waypoint {currentWaypointIndex} is null. Skipping to next waypoint.", this);
                 AdvanceToNextWaypoint();
@@ -102,9 +114,9 @@ public class EnemyMovement : MonoBehaviour
             }
         }
 
-        MoveWithMomentum(targetWaypoint.position);
+        MoveWithMomentum(targetPosition);
 
-        if (ShouldAdvanceWaypoint(targetWaypoint, waypointReachDistance))
+        if (ShouldAdvanceWaypoint(targetPosition, segmentDirection, waypointReachDistance))
         {
             AdvanceToNextWaypoint();
         }
@@ -118,14 +130,13 @@ public class EnemyMovement : MonoBehaviour
             return;
         }
 
-        Transform initialTarget = pathManager.GetWaypoint(1);
-        if (initialTarget == null)
+        if (!TryGetWaypointTargetPosition(1, out Vector3 initialTargetPosition, out _))
         {
             currentVelocity = Vector3.zero;
             return;
         }
 
-        Vector3 toInitialTarget = initialTarget.position - transform.position;
+        Vector3 toInitialTarget = initialTargetPosition - transform.position;
         currentVelocity = toInitialTarget.sqrMagnitude > 0.0001f
             ? toInitialTarget.normalized * Mathf.Max(0f, moveSpeed)
             : Vector3.zero;
@@ -183,37 +194,101 @@ public class EnemyMovement : MonoBehaviour
         transform.position += currentVelocity * Time.deltaTime;
     }
 
-    private bool ShouldAdvanceWaypoint(Transform targetWaypoint, float waypointReachDistance)
+    private bool ShouldAdvanceWaypoint(Vector3 targetPosition, Vector3 segmentDirection, float waypointReachDistance)
     {
-        if (targetWaypoint == null)
+        if (Vector3.Distance(transform.position, targetPosition) <= waypointReachDistance)
         {
             return true;
         }
 
-        if (Vector3.Distance(transform.position, targetWaypoint.position) <= waypointReachDistance)
-        {
-            return true;
-        }
-
-        if (currentWaypointIndex <= 0)
-        {
-            return false;
-        }
-
-        Transform previousWaypoint = pathManager.GetWaypoint(currentWaypointIndex - 1);
-        if (previousWaypoint == null)
-        {
-            return false;
-        }
-
-        Vector3 segmentDirection = targetWaypoint.position - previousWaypoint.position;
         if (segmentDirection.sqrMagnitude <= 0.0001f)
         {
             return false;
         }
 
-        Vector3 waypointToPosition = transform.position - targetWaypoint.position;
+        Vector3 waypointToPosition = transform.position - targetPosition;
         return Vector3.Dot(waypointToPosition, segmentDirection.normalized) > 0f;
+    }
+
+    private bool TryGetWaypointTargetPosition(int waypointIndex, out Vector3 targetPosition, out Vector3 segmentDirection)
+    {
+        targetPosition = Vector3.zero;
+        segmentDirection = Vector3.zero;
+
+        Transform waypoint = pathManager.GetWaypoint(waypointIndex);
+        if (waypoint == null)
+        {
+            return false;
+        }
+
+        targetPosition = waypoint.position;
+        segmentDirection = GetSegmentDirection(waypointIndex);
+
+        if (!useCustomPathOffset || Mathf.Abs(pathLateralOffset) <= 0.0001f)
+        {
+            return true;
+        }
+
+        Vector3 lateralDirection = GetLateralDirection(segmentDirection, waypointIndex);
+        targetPosition += lateralDirection * pathLateralOffset;
+        return true;
+    }
+
+    private Vector3 GetSegmentDirection(int waypointIndex)
+    {
+        if (pathManager == null || pathManager.WaypointCount < 2)
+        {
+            return Vector3.zero;
+        }
+
+        Vector3 segment = Vector3.zero;
+        if (waypointIndex <= 0)
+        {
+            Transform from = pathManager.GetWaypoint(0);
+            Transform to = pathManager.GetWaypoint(1);
+            if (from != null && to != null)
+            {
+                segment = to.position - from.position;
+            }
+        }
+        else
+        {
+            Transform from = pathManager.GetWaypoint(waypointIndex - 1);
+            Transform to = pathManager.GetWaypoint(waypointIndex);
+            if (from != null && to != null)
+            {
+                segment = to.position - from.position;
+            }
+        }
+
+        if (segment.sqrMagnitude <= 0.0001f && waypointIndex < pathManager.WaypointCount - 1)
+        {
+            Transform from = pathManager.GetWaypoint(waypointIndex);
+            Transform to = pathManager.GetWaypoint(waypointIndex + 1);
+            if (from != null && to != null)
+            {
+                segment = to.position - from.position;
+            }
+        }
+
+        return segment.sqrMagnitude > 0.0001f ? segment.normalized : Vector3.zero;
+    }
+
+    private Vector3 GetLateralDirection(Vector3 segmentDirection, int waypointIndex)
+    {
+        Vector3 resolvedDirection = segmentDirection;
+        if (resolvedDirection.sqrMagnitude <= 0.0001f && waypointIndex > 0)
+        {
+            resolvedDirection = GetSegmentDirection(waypointIndex - 1);
+        }
+
+        if (resolvedDirection.sqrMagnitude <= 0.0001f)
+        {
+            return Vector3.right;
+        }
+
+        Vector3 lateral = new Vector3(-resolvedDirection.y, resolvedDirection.x, 0f);
+        return lateral.sqrMagnitude > 0.0001f ? lateral.normalized : Vector3.right;
     }
 
     private void AdvanceToNextWaypoint()

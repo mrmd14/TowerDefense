@@ -75,10 +75,7 @@ public class TowerBuildButtonVisual : MonoBehaviour
                 ? towerData.AffordableButtonSprite
                 : towerData.UnaffordableButtonSprite;
 
-            if (desiredSprite == null)
-            {
-                desiredSprite = towerData.Icon != null ? towerData.Icon : fallbackSprite;
-            }
+
 
             if (desiredSprite != null && buttonImage.sprite != desiredSprite)
             {

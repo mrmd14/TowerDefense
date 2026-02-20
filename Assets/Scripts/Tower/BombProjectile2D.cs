@@ -12,6 +12,11 @@ public class BombProjectile2D : Projectile2D
     [SerializeField] private float bombImpactVfxRotationZ = 0f;
     [SerializeField, Min(0.1f)] private float bombImpactVfxDespawnDelay = 2f;
 
+    [Header("Bomb Impact Camera Shake")]
+    [SerializeField] private bool shakeCameraOnImpact = true;
+    [SerializeField, Min(0f)] private float cameraShakeDuration = 0.18f;
+    [SerializeField, Min(0f)] private float cameraShakeStrength = 0.18f;
+
     [Header("Bomb Rotation")]
     [SerializeField] private float zRotationSpeed = 360f;
 
@@ -84,6 +89,7 @@ public class BombProjectile2D : Projectile2D
         }
 
         SpawnBombImpactVfx(explosionCenter);
+        TriggerCameraShake();
     }
 
     private void OnDrawGizmosSelected()
@@ -119,5 +125,36 @@ public class BombProjectile2D : Projectile2D
         }
 
         despawnAfterDelay.SetDelay(bombImpactVfxDespawnDelay);
+    }
+
+    private void TriggerCameraShake()
+    {
+        if (!shakeCameraOnImpact)
+        {
+            return;
+        }
+
+        OrthographicYBoundsCamera boundsCamera = OrthographicYBoundsCamera.Instance;
+        if (boundsCamera == null)
+        {
+            Camera mainCamera = Camera.main;
+            if (mainCamera != null)
+            {
+                boundsCamera = mainCamera.GetComponent<OrthographicYBoundsCamera>();
+            }
+        }
+
+        if (boundsCamera == null)
+        {
+            return;
+        }
+
+        if (cameraShakeDuration <= 0f || cameraShakeStrength <= 0f)
+        {
+            boundsCamera.TriggerDefaultShake();
+            return;
+        }
+
+        boundsCamera.TriggerShake(cameraShakeDuration, cameraShakeStrength);
     }
 }

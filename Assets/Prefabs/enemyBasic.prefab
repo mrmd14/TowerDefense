@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8787461607815540623}
   - component: {fileID: 3657963135395099690}
   m_Layer: 6
-  m_Name: enemy1
+  m_Name: enemyBasic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -69,10 +69,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad79f7684d377bc4fac4f7fb370cf698, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth2D
-  maxHP: 3
-  currentHP: 3
-  killReward: 5
+  maxHP: 4
+  currentHP: 4
   enemyGfxManager: {fileID: 7935787826447716138}
+  killReward: 10
   healthScaleTarget: {fileID: 3871335299252997016}
 --- !u!50 &8787461607815540623
 Rigidbody2D:
@@ -451,5 +451,9 @@ MonoBehaviour:
   spriteRenderer: {fileID: 2598835089258213389}
   flipByDirection: 1
   fadeInOnSpawn: 1
-  fadeInDuration: 0.35
+  fadeInDuration: 0.15
   hitFlashDuration: 0.2
+  sortByYPosition: 1
+  sortingOrderPerWorldUnit: 100
+  sortingOrderOffset: 500
+  sortingReference: {fileID: 5038611864626826920}

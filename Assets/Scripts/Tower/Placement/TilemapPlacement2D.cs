@@ -15,6 +15,7 @@ public class TilemapPlacement2D : MonoBehaviour
     [SerializeField] private GhostPreview2D ghostPreview;
     [SerializeField] private CurrencyManager currencyManager;
     [SerializeField] private MoneyUI moneyUI;
+    [SerializeField] private TowerUpgradeButtonUI towerUpgradeButtonUI;
     [SerializeField] private Transform towerRangeVisual;
 
     [Header("Input Actions (New Input System)")]
@@ -74,6 +75,17 @@ public class TilemapPlacement2D : MonoBehaviour
             moneyUI = MoneyUI.Instance ?? FindFirstObjectByType<MoneyUI>();
         }
 
+        if (towerUpgradeButtonUI == null)
+        {
+            TowerUpgradeButtonUI[] upgradeButtons = FindObjectsByType<TowerUpgradeButtonUI>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+            if (upgradeButtons != null && upgradeButtons.Length > 0)
+            {
+                towerUpgradeButtonUI = upgradeButtons[0];
+            }
+
+
+        }
+
         if (towerSelectionLayers == 0)
         {
             int towerLayer = LayerMask.NameToLayer("Tower");
@@ -83,6 +95,7 @@ public class TilemapPlacement2D : MonoBehaviour
         EnsureRangeVisualReference();
         CacheRangeVisualBaseScale();
         HideRangeVisual();
+        HideTowerUpgradeButton();
     }
 
     private void OnEnable()
@@ -98,6 +111,7 @@ public class TilemapPlacement2D : MonoBehaviour
 
         SyncGhostWithSelection();
         HideRangeVisual();
+        HideTowerUpgradeButton();
     }
 
     private void OnDisable()
@@ -112,6 +126,7 @@ public class TilemapPlacement2D : MonoBehaviour
         }
 
         HideRangeVisual();
+        HideTowerUpgradeButton();
     }
 
     private void Update()
@@ -141,23 +156,27 @@ public class TilemapPlacement2D : MonoBehaviour
 
     private void OnSelectedTowerChanged(TowerData selectedTower)
     {
-        if (ghostPreview == null)
-        {
-            return;
-        }
-
         if (selectedTower == null)
         {
-            ghostPreview.Clear();
+            if (ghostPreview != null)
+            {
+                ghostPreview.Clear();
+            }
+
             if (selectedPlacedTower == null)
             {
                 HideRangeVisual();
+                HideTowerUpgradeButton();
             }
             return;
         }
 
         selectedPlacedTower = null;
-        ghostPreview.SetTower(selectedTower);
+        HideTowerUpgradeButton();
+        if (ghostPreview != null)
+        {
+            ghostPreview.SetTower(selectedTower);
+        }
     }
 
     private void SyncGhostWithSelection()
@@ -181,6 +200,7 @@ public class TilemapPlacement2D : MonoBehaviour
         {
             selectedPlacedTower = null;
             HideRangeVisual();
+            HideTowerUpgradeButton();
             buildManager.CancelSelection();
             return;
         }
@@ -189,6 +209,7 @@ public class TilemapPlacement2D : MonoBehaviour
         {
             selectedPlacedTower = null;
             HideRangeVisual();
+            HideTowerUpgradeButton();
             buildManager.CancelSelection();
         }
     }
@@ -207,20 +228,24 @@ public class TilemapPlacement2D : MonoBehaviour
             if (selectedPlacedTower == null)
             {
                 HideRangeVisual();
+                HideTowerUpgradeButton();
             }
             else
             {
                 ShowRangeVisual(selectedPlacedTower.transform.position, selectedPlacedTower.Range);
+                ShowTowerUpgradeButton(selectedPlacedTower);
             }
             return;
         }
 
         selectedPlacedTower = null;
+        HideTowerUpgradeButton();
 
         if (!TryGetPointerCell(out Vector3Int cell, out Vector3 cellCenter))
         {
             ghostPreview.Hide();
             HideRangeVisual();
+            HideTowerUpgradeButton();
             return;
         }
 
@@ -258,6 +283,7 @@ public class TilemapPlacement2D : MonoBehaviour
 
             selectedPlacedTower = null;
             HideRangeVisual();
+            HideTowerUpgradeButton();
             return;
         }
 
@@ -295,13 +321,19 @@ public class TilemapPlacement2D : MonoBehaviour
             TowerController2D towerController = spawnedTowerObject.GetComponent<TowerController2D>();
             if (towerController != null)
             {
-                towerController.SetRange(selectedTower.Range);
+                towerController.SetSortingOrderFromGridY(cell.y);
+
+                if (!towerController.ResetUpgradeProgress())
+                {
+                    towerController.SetRange(selectedTower.Range);
+                }
             }
         }
 
         occupiedCells.Add(cell);
         selectedPlacedTower = null;
         HideRangeVisual();
+        HideTowerUpgradeButton();
         buildManager.CancelSelection();
         return true;
     }
@@ -336,19 +368,13 @@ public class TilemapPlacement2D : MonoBehaviour
     {
         if (towerData == null || towerData.Prefab == null)
         {
-
             return false;
         }
 
         if (buildableTilemap == null)
         {
-
             return false;
         }
-
-
-
-
 
 
         if (blockedTilemap != null && IsBlockedByTilemap(cellCenter))
@@ -358,16 +384,14 @@ public class TilemapPlacement2D : MonoBehaviour
 
         if (occupiedCells.Contains(cell))
         {
-
             return false;
         }
 
         if (HasPhysicsOverlap(cellCenter, towerData))
         {
-
             return false;
         }
-        print(6);
+
         return true;
     }
 
@@ -418,6 +442,15 @@ public class TilemapPlacement2D : MonoBehaviour
             return 0f;
         }
 
+        if (towerData.Prefab != null)
+        {
+            TowerController2D towerController = towerData.Prefab.GetComponent<TowerController2D>();
+            if (towerController != null && towerController.TryGetInitialUpgradeRange(out float stageRange))
+            {
+                return stageRange;
+            }
+        }
+
         return towerData.Range;
     }
 
@@ -442,7 +475,28 @@ public class TilemapPlacement2D : MonoBehaviour
 
         selectedPlacedTower = tower;
         ShowRangeVisual(tower.transform.position, tower.Range);
+        ShowTowerUpgradeButton(tower);
         return true;
+    }
+
+    private void ShowTowerUpgradeButton(TowerController2D tower)
+    {
+        if (towerUpgradeButtonUI == null)
+        {
+            return;
+        }
+
+        towerUpgradeButtonUI.ShowForTower(tower);
+    }
+
+    private void HideTowerUpgradeButton()
+    {
+        if (towerUpgradeButtonUI == null)
+        {
+            return;
+        }
+
+        towerUpgradeButtonUI.Hide();
     }
 
     private bool TryGetPointerCell(out Vector3Int cell, out Vector3 cellCenter)

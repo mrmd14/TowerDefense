@@ -57,6 +57,11 @@ public class EnemyHealth2D : MonoBehaviour, IDamageable
     {
         currentHP = 0;
         UpdateHealthScaleVisual();
+        Collider2D enemyCollider = GetComponent<Collider2D>();
+        Renderer enemyRenderer = enemyGfxManager != null
+            ? enemyGfxManager.GetComponentInChildren<Renderer>()
+            : GetComponentInChildren<Renderer>();
+        EnemyDeathVfx.PlayFor(transform, enemyCollider, enemyRenderer);
         OnDied?.Invoke(this);
         OnAnyEnemyDied?.Invoke(this);
         CentralObjectPool.Despawn(gameObject);

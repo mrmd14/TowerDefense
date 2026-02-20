@@ -148,6 +148,14 @@ MonoBehaviour:
   projectilePrefab: {fileID: 6941760044416398633, guid: 804a6c01c709bed47b3f179c63440c83, type: 3}
   targetScanInterval: 0.1
   ensureClickCollider: 1
+  upgradeProfile: {fileID: 11400000, guid: 3ed7a463ce58419386c216f30e2931c4, type: 2}
+  resetUpgradeOnEnable: 1
+  currentUpgradeStage: -1
+  sortableSpriteRenderers:
+  - {fileID: 8554818525213940198}
+  - {fileID: 8996126961804560804}
+  sortingOrderPerGridRow: 10
+  sortingOrderOffset: 100
   archerAnimator: {fileID: 987033862538343830}
   archerRenderer: {fileID: 0}
   idleStateName: idle

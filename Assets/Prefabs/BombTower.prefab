@@ -239,8 +239,17 @@ MonoBehaviour:
   projectilePrefab: {fileID: 6941760044416398633, guid: ad001b62b7e84588b560c8459847b5ff, type: 3}
   targetScanInterval: 0.1
   ensureClickCollider: 1
+  upgradeProfile: {fileID: 11400000, guid: 8f0c55d7f3344e8ab4f2bbf3df96235e, type: 2}
+  resetUpgradeOnEnable: 1
+  currentUpgradeStage: -1
+  sortableSpriteRenderers:
+  - {fileID: 5254537540252330106}
+  - {fileID: 5968233318067148427}
+  sortingOrderPerGridRow: 10
+  sortingOrderOffset: 100
   fadeSpriteRenderer: {fileID: 5968233318067148427}
   fadeDuration: 0.6
+  fadeRiseDistance: 0.35
   fadeCurve:
     serializedVersion: 2
     m_Curve:
