@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,6 +11,8 @@ public class WaveManager : MonoBehaviour
 
     [Header("Waves")]
     [SerializeField] private List<WaveConfig> waves = new List<WaveConfig>();
+    [SerializeField] private bool autoStartWaves = true;
+    [SerializeField, Min(0f)] private float autoStartDelaySeconds = 0f;
 
     public event Action<int, int> OnWaveStarted;
     public event Action<int, int> OnWaveCompleted;
@@ -24,6 +27,7 @@ public class WaveManager : MonoBehaviour
     private int currentWaveIndex = -1;
     private bool spawnFinished;
     private bool isGameOver;
+    private Coroutine autoStartCoroutine;
 
     private void Awake()
     {
@@ -61,10 +65,18 @@ public class WaveManager : MonoBehaviour
         {
             livesManager.OnGameOver += HandleGameOver;
         }
+
+        QueueAutoStartNextWave();
     }
 
     private void OnDisable()
     {
+        if (autoStartCoroutine != null)
+        {
+            StopCoroutine(autoStartCoroutine);
+            autoStartCoroutine = null;
+        }
+
         if (enemySpawner != null)
         {
             enemySpawner.OnWaveSpawnCompleted -= HandleWaveSpawnCompleted;
@@ -80,6 +92,12 @@ public class WaveManager : MonoBehaviour
 
     public void StartWave()
     {
+        if (autoStartCoroutine != null)
+        {
+            StopCoroutine(autoStartCoroutine);
+            autoStartCoroutine = null;
+        }
+
         if (isGameOver || IsWaveActive || !HasMoreWaves || enemySpawner == null)
         {
             return;
@@ -134,12 +152,48 @@ public class WaveManager : MonoBehaviour
 
         IsWaveActive = false;
         OnWaveCompleted?.Invoke(CurrentWaveNumber, TotalWaves);
+        QueueAutoStartNextWave();
     }
 
     private void HandleGameOver()
     {
         isGameOver = true;
         IsWaveActive = false;
+        if (autoStartCoroutine != null)
+        {
+            StopCoroutine(autoStartCoroutine);
+            autoStartCoroutine = null;
+        }
         enemySpawner?.StopSpawning();
+    }
+
+    private void QueueAutoStartNextWave()
+    {
+        if (!autoStartWaves || isGameOver || IsWaveActive || !HasMoreWaves)
+        {
+            return;
+        }
+
+        if (autoStartCoroutine != null)
+        {
+            return;
+        }
+
+        autoStartCoroutine = StartCoroutine(AutoStartNextWaveRoutine(autoStartDelaySeconds));
+    }
+
+    private IEnumerator AutoStartNextWaveRoutine(float delaySeconds)
+    {
+        if (delaySeconds > 0f)
+        {
+            yield return new WaitForSeconds(delaySeconds);
+        }
+        else
+        {
+            yield return null;
+        }
+
+        autoStartCoroutine = null;
+        StartWave();
     }
 }

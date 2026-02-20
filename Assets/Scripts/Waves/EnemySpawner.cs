@@ -5,6 +5,20 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
+    private struct SpawnInstruction
+    {
+        public SpawnInstruction(EnemyType enemyType, GameObject prefab, int count)
+        {
+            EnemyType = enemyType;
+            Prefab = prefab;
+            Count = Mathf.Max(0, count);
+        }
+
+        public EnemyType EnemyType { get; }
+        public GameObject Prefab { get; }
+        public int Count { get; }
+    }
+
     [Header("References")]
     [SerializeField] private PathManager pathManager;
 
@@ -45,6 +59,11 @@ public class EnemySpawner : MonoBehaviour
 
     public void StartSpawningWave(WaveConfig wave)
     {
+        StartSpawningWave(wave, null);
+    }
+
+    public void StartSpawningWave(WaveConfig wave, GameObject enemyPrefabOverride)
+    {
         if (wave == null)
         {
             Debug.LogError("EnemySpawner cannot spawn a null wave.", this);
@@ -67,13 +86,14 @@ public class EnemySpawner : MonoBehaviour
         StopSpawning();
         SpawnedEnemiesCount = 0;
 
-        if (wave.EnemyPrefab == null || wave.Count == 0)
+        List<SpawnInstruction> spawnInstructions = BuildSpawnInstructions(wave, enemyPrefabOverride);
+        if (spawnInstructions.Count == 0)
         {
             OnWaveSpawnCompleted?.Invoke();
             return;
         }
 
-        spawnRoutine = StartCoroutine(SpawnRoutine(wave));
+        spawnRoutine = StartCoroutine(SpawnRoutine(wave, spawnInstructions));
     }
 
     public void StopSpawning()
@@ -87,7 +107,7 @@ public class EnemySpawner : MonoBehaviour
         spawnRoutine = null;
     }
 
-    private IEnumerator SpawnRoutine(WaveConfig wave)
+    private IEnumerator SpawnRoutine(WaveConfig wave, List<SpawnInstruction> spawnInstructions)
     {
         if (wave.StartDelay > 0f)
         {
@@ -101,41 +121,52 @@ public class EnemySpawner : MonoBehaviour
 
         do
         {
-            for (int i = 0; i < wave.Count; i++)
+            for (int instructionIndex = 0; instructionIndex < spawnInstructions.Count; instructionIndex++)
             {
-                if (useDurationLoop && Time.time >= endTime)
-                {
-                    break;
-                }
-
-                SpawnEnemy(wave.EnemyPrefab, spawnPosition);
-
-                bool shouldWait = i < wave.Count - 1 || useDurationLoop;
-                if (!shouldWait)
+                SpawnInstruction instruction = spawnInstructions[instructionIndex];
+                if (instruction.Prefab == null || instruction.Count <= 0)
                 {
                     continue;
                 }
 
-                if (wave.SpawnInterval > 0f)
+                for (int countIndex = 0; countIndex < instruction.Count; countIndex++)
                 {
-                    float waitDuration = wave.SpawnInterval;
-                    if (useDurationLoop)
+                    if (useDurationLoop && Time.time >= endTime)
                     {
-                        float remainingTime = endTime - Time.time;
-                        if (remainingTime <= 0f)
-                        {
-                            break;
-                        }
-
-                        waitDuration = Mathf.Min(waitDuration, remainingTime);
+                        break;
                     }
 
-                    yield return new WaitForSeconds(waitDuration);
-                }
-                else if (useDurationLoop)
-                {
-                    // Prevent a tight loop when duration mode uses zero interval.
-                    yield return null;
+                    SpawnEnemy(instruction.Prefab, spawnPosition);
+
+                    bool isLastInstruction = instructionIndex >= spawnInstructions.Count - 1;
+                    bool isLastCount = countIndex >= instruction.Count - 1;
+                    bool shouldWait = !isLastInstruction || !isLastCount || useDurationLoop;
+                    if (!shouldWait)
+                    {
+                        continue;
+                    }
+
+                    if (wave.SpawnInterval > 0f)
+                    {
+                        float waitDuration = wave.SpawnInterval;
+                        if (useDurationLoop)
+                        {
+                            float remainingTime = endTime - Time.time;
+                            if (remainingTime <= 0f)
+                            {
+                                break;
+                            }
+
+                            waitDuration = Mathf.Min(waitDuration, remainingTime);
+                        }
+
+                        yield return new WaitForSeconds(waitDuration);
+                    }
+                    else if (useDurationLoop)
+                    {
+                        // Prevent a tight loop when duration mode uses zero interval.
+                        yield return null;
+                    }
                 }
             }
         }
@@ -147,7 +178,7 @@ public class EnemySpawner : MonoBehaviour
 
     private void SpawnEnemy(GameObject enemyPrefab, Vector3 spawnPosition)
     {
-        GameObject enemyObject = CentralObjectPool.SpawnEnemy(enemyPrefab, spawnPosition, Quaternion.identity);
+        GameObject enemyObject = CentralObjectPool.Spawn(enemyPrefab, spawnPosition, Quaternion.identity);
         if (enemyObject == null)
         {
             return;
@@ -166,6 +197,70 @@ public class EnemySpawner : MonoBehaviour
         }
 
         SpawnedEnemiesCount++;
+    }
+
+    private List<SpawnInstruction> BuildSpawnInstructions(WaveConfig wave, GameObject enemyPrefabOverride)
+    {
+        List<SpawnInstruction> instructions = new List<SpawnInstruction>();
+        IReadOnlyList<WaveEnemyEntry> waveEnemies = wave.Enemies;
+
+        if (waveEnemies != null)
+        {
+            for (int i = 0; i < waveEnemies.Count; i++)
+            {
+                WaveEnemyEntry entry = waveEnemies[i];
+                if (entry == null || entry.Count <= 0)
+                {
+                    continue;
+                }
+
+                GameObject resolvedPrefab = ResolvePrefab(entry.EnemyType, enemyPrefabOverride);
+                if (resolvedPrefab == null)
+                {
+                    Debug.LogWarning(
+                        $"Wave '{wave.name}' skipped enemy type '{entry.EnemyType}' because no prefab is mapped.",
+                        this);
+                    continue;
+                }
+
+                instructions.Add(new SpawnInstruction(entry.EnemyType, resolvedPrefab, entry.Count));
+            }
+        }
+
+        if (instructions.Count > 0)
+        {
+            return instructions;
+        }
+
+        if (enemyPrefabOverride != null && wave.TotalEnemyCount > 0)
+        {
+            instructions.Add(new SpawnInstruction(EnemyType.Basic, enemyPrefabOverride, wave.TotalEnemyCount));
+            return instructions;
+        }
+
+        if (wave.TryGetLegacySpawnData(out GameObject legacyEnemyPrefab, out int legacyCount))
+        {
+            instructions.Add(new SpawnInstruction(EnemyType.Basic, legacyEnemyPrefab, legacyCount));
+        }
+
+        return instructions;
+    }
+
+    private GameObject ResolvePrefab(EnemyType enemyType, GameObject enemyPrefabOverride)
+    {
+        if (enemyPrefabOverride != null)
+        {
+            return enemyPrefabOverride;
+        }
+
+        EnemyPrefabRegistry registry = EnemyPrefabRegistry.Instance;
+        if (registry == null)
+        {
+            return null;
+        }
+
+        registry.TryGetPrefab(enemyType, out GameObject prefab);
+        return prefab;
     }
 
     private void TrackEnemy(EnemyMovement enemy)

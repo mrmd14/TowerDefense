@@ -16,6 +16,11 @@ public class Projectile2D : MonoBehaviour
     [Header("Hit")]
     [SerializeField] private bool useTriggerHit = true;
 
+    [Header("Impact VFX")]
+    [SerializeField] private GameObject enemyHitParticlePrefab;
+    [SerializeField] private Vector3 enemyHitParticleOffset = Vector3.zero;
+    [SerializeField] private float enemyHitParticleRotationZ = 0f;
+
     private Transform target;
     private int damage;
     private float lifetimeTimer;
@@ -32,7 +37,11 @@ public class Projectile2D : MonoBehaviour
     private Vector3 destinationPosition;
     private Vector3 apexPosition;
 
-    public void Init(Transform targetTransform, int damageAmount)
+    protected int DamageAmount => damage;
+    protected virtual bool AllowProximityImpact => true;
+    protected virtual bool AllowCollisionImpact => true;
+
+    public virtual void Init(Transform targetTransform, int damageAmount)
     {
         target = targetTransform;
         damage = Mathf.Max(1, damageAmount);
@@ -51,6 +60,7 @@ public class Projectile2D : MonoBehaviour
         lifetimeTimer += Time.deltaTime;
         if (lifetimeTimer >= Mathf.Max(0.1f, maxLifetime))
         {
+            OnLifetimeExpired();
             DespawnSelf();
             return;
         }
@@ -66,20 +76,14 @@ public class Projectile2D : MonoBehaviour
         if (flightTimer >= totalFlightDuration)
         {
             transform.position = destinationPosition;
-            if (target != null)
-            {
-                Impact(target);
-            }
-            else
-            {
-                DespawnSelf();
-            }
+            OnGroundReached();
+            DespawnSelf();
             return;
         }
 
         transform.position = EvaluateArcPosition(flightTimer);
 
-        if (target != null)
+        if (AllowProximityImpact && target != null)
         {
             Vector3 toTarget = target.position - transform.position;
             float hitDistanceSqr = hitDistance * hitDistance;
@@ -92,7 +96,7 @@ public class Projectile2D : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (!useTriggerHit || hasHit || other == null)
+        if (!useTriggerHit || !AllowCollisionImpact || hasHit || other == null)
         {
             return;
         }
@@ -105,7 +109,7 @@ public class Projectile2D : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (useTriggerHit || hasHit || collision == null)
+        if (useTriggerHit || !AllowCollisionImpact || hasHit || collision == null)
         {
             return;
         }
@@ -129,7 +133,38 @@ public class Projectile2D : MonoBehaviour
         IDamageable damageable = hitTransform.GetComponentInParent<IDamageable>();
         damageable?.TakeDamage(damage);
 
+        if (damageable != null)
+        {
+            SpawnEnemyHitParticle();
+        }
+
         DespawnSelf();
+    }
+
+    private void SpawnEnemyHitParticle()
+    {
+        SpawnEnemyHitParticleAt(transform.position);
+    }
+
+    protected void SpawnEnemyHitParticleAt(Vector3 spawnPosition)
+    {
+        if (enemyHitParticlePrefab == null)
+        {
+            return;
+        }
+
+        spawnPosition += enemyHitParticleOffset;
+        Quaternion spawnRotation = Quaternion.Euler(0f, 0f, enemyHitParticleRotationZ);
+        GameObject impactVfx = CentralObjectPool.Spawn(enemyHitParticlePrefab, spawnPosition, spawnRotation);
+        if (impactVfx == null)
+        {
+            return;
+        }
+
+        if (impactVfx.GetComponent<PooledParticleAutoDespawn>() == null)
+        {
+            impactVfx.AddComponent<PooledParticleAutoDespawn>();
+        }
     }
 
     private bool CanHitTarget()
@@ -205,8 +240,21 @@ public class Projectile2D : MonoBehaviour
         return horizontalDown;
     }
 
-    private void DespawnSelf()
+    protected virtual void OnGroundReached()
     {
-        CentralObjectPool.DespawnProjectile(this);
+    }
+
+    protected virtual void OnLifetimeExpired()
+    {
+    }
+
+    protected void MarkAsHit()
+    {
+        hasHit = true;
+    }
+
+    protected virtual void DespawnSelf()
+    {
+        CentralObjectPool.Despawn(gameObject);
     }
 }

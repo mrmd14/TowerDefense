@@ -1,0 +1,5980 @@
+fileFormatVersion: 2
+guid: 25b225972092b944393173f4b9280df4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4237610967178030062
+    second: go_decals-1_0
+  - first:
+      213: -7838779158968188366
+    second: go_decals-1_1
+  - first:
+      213: -7359858110918741903
+    second: go_decals-1_2
+  - first:
+      213: -3699951803383052439
+    second: go_decals-1_3
+  - first:
+      213: -4174608926367178051
+    second: go_decals-1_4
+  - first:
+      213: -5196423257841575934
+    second: go_decals-1_5
+  - first:
+      213: -2967032531939751858
+    second: go_decals-1_6
+  - first:
+      213: 1527107092415500843
+    second: go_decals-1_7
+  - first:
+      213: 7610546360111789237
+    second: go_decals-1_8
+  - first:
+      213: -4015548465560750991
+    second: go_decals-1_9
+  - first:
+      213: -3372266826695403401
+    second: go_decals-1_10
+  - first:
+      213: 1084520567586111915
+    second: go_decals-1_11
+  - first:
+      213: 2825628106303947721
+    second: go_decals-1_12
+  - first:
+      213: 3154037132176523668
+    second: go_decals-1_13
+  - first:
+      213: 8695250235765964391
+    second: go_decals-1_14
+  - first:
+      213: 4278997920304532195
+    second: go_decals-1_15
+  - first:
+      213: 6677698530110127485
+    second: go_decals-1_16
+  - first:
+      213: -4203786264801254714
+    second: go_decals-1_17
+  - first:
+      213: -489952221323436665
+    second: go_decals-1_18
+  - first:
+      213: 8442173987064460987
+    second: go_decals-1_19
+  - first:
+      213: 374081249561319208
+    second: go_decals-1_20
+  - first:
+      213: -1746647554180886418
+    second: go_decals-1_21
+  - first:
+      213: 2176685131914478754
+    second: go_decals-1_22
+  - first:
+      213: 147677155465855311
+    second: go_decals-1_23
+  - first:
+      213: -5451703540567827503
+    second: go_decals-1_24
+  - first:
+      213: 4487655057445326908
+    second: go_decals-1_25
+  - first:
+      213: 6473766850562164784
+    second: go_decals-1_26
+  - first:
+      213: -5539404393167623766
+    second: go_decals-1_27
+  - first:
+      213: -9206849389233381197
+    second: go_decals-1_28
+  - first:
+      213: -4442054249983539962
+    second: go_decals-1_29
+  - first:
+      213: 4876524517522012944
+    second: go_decals-1_30
+  - first:
+      213: 1262067786823410931
+    second: go_decals-1_31
+  - first:
+      213: 2778830893316475388
+    second: go_decals-1_32
+  - first:
+      213: -8539234371973046889
+    second: go_decals-1_33
+  - first:
+      213: -4128824750437614106
+    second: go_decals-1_34
+  - first:
+      213: 7046280741324262865
+    second: go_decals-1_35
+  - first:
+      213: 4210053214196046927
+    second: go_decals-1_36
+  - first:
+      213: -624398956086824610
+    second: go_decals-1_37
+  - first:
+      213: -8194867289648060043
+    second: go_decals-1_38
+  - first:
+      213: -4772954749040139118
+    second: go_decals-1_39
+  - first:
+      213: 6445366520983142955
+    second: go_decals-1_40
+  - first:
+      213: -8334601856110136895
+    second: go_decals-1_41
+  - first:
+      213: 5104273063653195568
+    second: go_decals-1_42
+  - first:
+      213: -4656363010201188910
+    second: go_decals-1_43
+  - first:
+      213: -6694653164165562517
+    second: go_decals-1_44
+  - first:
+      213: -1809539911449856814
+    second: go_decals-1_45
+  - first:
+      213: 7941729905760689289
+    second: go_decals-1_46
+  - first:
+      213: -5273927426872280838
+    second: go_decals-1_47
+  - first:
+      213: 2438662997794538213
+    second: go_decals-1_48
+  - first:
+      213: -7557749430823625647
+    second: go_decals-1_49
+  - first:
+      213: -6518278773765305773
+    second: go_decals-1_50
+  - first:
+      213: 1157620140538586865
+    second: go_decals-1_51
+  - first:
+      213: -8690808076242986102
+    second: go_decals-1_52
+  - first:
+      213: 3944136559034234790
+    second: go_decals-1_53
+  - first:
+      213: 7585704675237052881
+    second: go_decals-1_54
+  - first:
+      213: 8028665146675741287
+    second: go_decals-1_55
+  - first:
+      213: -4737557044775401517
+    second: go_decals-1_56
+  - first:
+      213: 33716394408147759
+    second: go_decals-1_57
+  - first:
+      213: -8149655232655136342
+    second: go_decals-1_58
+  - first:
+      213: -5928913484279614705
+    second: go_decals-1_59
+  - first:
+      213: 5865473012523716442
+    second: go_decals-1_60
+  - first:
+      213: 422345962887981961
+    second: go_decals-1_61
+  - first:
+      213: 1603751026278153722
+    second: go_decals-1_62
+  - first:
+      213: -6100667544204169174
+    second: go_decals-1_63
+  - first:
+      213: 7057009144399066132
+    second: go_decals-1_64
+  - first:
+      213: 8890211593259478883
+    second: go_decals-1_65
+  - first:
+      213: -4575030034150504353
+    second: go_decals-1_66
+  - first:
+      213: 4116296542598201546
+    second: go_decals-1_67
+  - first:
+      213: -413705688833474543
+    second: go_decals-1_68
+  - first:
+      213: 3160979481017756334
+    second: go_decals-1_69
+  - first:
+      213: -1525913979493120077
+    second: go_decals-1_70
+  - first:
+      213: 8451021922905761726
+    second: go_decals-1_71
+  - first:
+      213: -6957538766391004371
+    second: go_decals-1_72
+  - first:
+      213: -3304188809032481178
+    second: go_decals-1_73
+  - first:
+      213: -2025118198825374813
+    second: go_decals-1_74
+  - first:
+      213: -8032727379846758934
+    second: go_decals-1_75
+  - first:
+      213: 6270540968244101983
+    second: go_decals-1_76
+  - first:
+      213: -5897949664304220878
+    second: go_decals-1_77
+  - first:
+      213: 1629576443149716170
+    second: go_decals-1_78
+  - first:
+      213: -4565499198530752565
+    second: go_decals-1_79
+  - first:
+      213: 8934053867994435171
+    second: go_decals-1_80
+  - first:
+      213: -10480627721714520
+    second: go_decals-1_81
+  - first:
+      213: -3839537100907601980
+    second: go_decals-1_82
+  - first:
+      213: -3120001640767315742
+    second: go_decals-1_83
+  - first:
+      213: 2911310283178038442
+    second: go_decals-1_84
+  - first:
+      213: 4620009884816634955
+    second: go_decals-1_85
+  - first:
+      213: 4700404116968370954
+    second: go_decals-1_86
+  - first:
+      213: -120178222692196998
+    second: go_decals-1_87
+  - first:
+      213: 7233882638558460137
+    second: go_decals-1_88
+  - first:
+      213: 197587350564138339
+    second: go_decals-1_89
+  - first:
+      213: 6347632516419625996
+    second: go_decals-1_90
+  - first:
+      213: 6357894428358642712
+    second: go_decals-1_91
+  - first:
+      213: -6095269529058137962
+    second: go_decals-1_92
+  - first:
+      213: 1005161918547954963
+    second: go_decals-1_93
+  - first:
+      213: 2274826820945499218
+    second: go_decals-1_94
+  - first:
+      213: 9192988926822743898
+    second: go_decals-1_95
+  - first:
+      213: 245990587300267562
+    second: go_decals-1_96
+  - first:
+      213: 880736172001792712
+    second: go_decals-1_97
+  - first:
+      213: -726711867897991787
+    second: go_decals-1_98
+  - first:
+      213: 6346672021832385657
+    second: go_decals-1_99
+  - first:
+      213: -3581030018812162654
+    second: go_decals-1_100
+  - first:
+      213: 215291255450858312
+    second: go_decals-1_101
+  - first:
+      213: 6636228829138289359
+    second: go_decals-1_102
+  - first:
+      213: -7505475720980369092
+    second: go_decals-1_103
+  - first:
+      213: -8120097728938747166
+    second: go_decals-1_104
+  - first:
+      213: -7099269693707168383
+    second: go_decals-1_105
+  - first:
+      213: 1864766618728138012
+    second: go_decals-1_106
+  - first:
+      213: 278143715342547617
+    second: go_decals-1_107
+  - first:
+      213: 7693388985529622076
+    second: go_decals-1_108
+  - first:
+      213: 3824025120321599251
+    second: go_decals-1_109
+  - first:
+      213: 7662479997763169652
+    second: go_decals-1_110
+  - first:
+      213: 8681662479881368366
+    second: go_decals-1_111
+  - first:
+      213: -6509296026429724354
+    second: go_decals-1_112
+  - first:
+      213: -4768445713501532167
+    second: go_decals-1_113
+  - first:
+      213: 4944773577281947521
+    second: go_decals-1_114
+  - first:
+      213: 4618880857788542294
+    second: go_decals-1_115
+  - first:
+      213: -2661489604054221868
+    second: go_decals-1_116
+  - first:
+      213: -6323823040304338056
+    second: go_decals-1_117
+  - first:
+      213: -762221247295113334
+    second: go_decals-1_118
+  - first:
+      213: 8857962544161856288
+    second: go_decals-1_119
+  - first:
+      213: -5006826899629701552
+    second: go_decals-1_120
+  - first:
+      213: 1255738426892928215
+    second: go_decals-1_121
+  - first:
+      213: 603301364968942804
+    second: go_decals-1_122
+  - first:
+      213: -2168251443645656409
+    second: go_decals-1_123
+  - first:
+      213: -4776286705635403028
+    second: go_decals-1_124
+  - first:
+      213: 1175368052334276746
+    second: go_decals-1_125
+  - first:
+      213: -7684144469669392914
+    second: go_decals-1_126
+  - first:
+      213: -5459930130799292693
+    second: go_decals-1_127
+  - first:
+      213: 7148285552294960045
+    second: go_decals-1_128
+  - first:
+      213: 4193215164106307931
+    second: go_decals-1_129
+  - first:
+      213: -9187762804626411489
+    second: go_decals-1_130
+  - first:
+      213: -5544483983474534386
+    second: go_decals-1_131
+  - first:
+      213: -8011284273590944855
+    second: go_decals-1_132
+  - first:
+      213: -7642492933490752086
+    second: go_decals-1_133
+  - first:
+      213: 5907136903446992682
+    second: go_decals-1_134
+  - first:
+      213: 3646331202801538698
+    second: go_decals-1_135
+  - first:
+      213: -927180946503095636
+    second: go_decals-1_136
+  - first:
+      213: -4307704575381899817
+    second: go_decals-1_137
+  - first:
+      213: 8511612817348728432
+    second: go_decals-1_138
+  - first:
+      213: 5451479615388204290
+    second: go_decals-1_139
+  - first:
+      213: -8237365173878829971
+    second: go_decals-1_140
+  - first:
+      213: 1458070090557697548
+    second: go_decals-1_141
+  - first:
+      213: -3923640777822567086
+    second: go_decals-1_142
+  - first:
+      213: -3502997980545427616
+    second: go_decals-1_143
+  - first:
+      213: -2385156883754160232
+    second: go_decals-1_144
+  - first:
+      213: -5331634574406887446
+    second: go_decals-1_145
+  - first:
+      213: -6357896885016459086
+    second: go_decals-1_146
+  - first:
+      213: 5334797226745646975
+    second: go_decals-1_147
+  - first:
+      213: -1277226932477782072
+    second: go_decals-1_148
+  - first:
+      213: -312183481854324792
+    second: go_decals-1_149
+  - first:
+      213: 2779493040499089763
+    second: go_decals-1_150
+  - first:
+      213: 4575593859546917943
+    second: go_decals-1_151
+  - first:
+      213: 8212815013468419101
+    second: go_decals-1_152
+  - first:
+      213: -3328623224327487762
+    second: go_decals-1_153
+  - first:
+      213: -396666847159208109
+    second: go_decals-1_154
+  - first:
+      213: -5621501989433720097
+    second: go_decals-1_155
+  - first:
+      213: 4443734984361669157
+    second: go_decals-1_156
+  - first:
+      213: 9152986446231540604
+    second: go_decals-1_157
+  - first:
+      213: 8722111613873670099
+    second: go_decals-1_158
+  - first:
+      213: -57177201594693058
+    second: go_decals-1_159
+  - first:
+      213: -2751049644571910810
+    second: go_decals-1_160
+  - first:
+      213: 4838547257814107696
+    second: go_decals-1_161
+  - first:
+      213: 1994462807468674438
+    second: go_decals-1_162
+  - first:
+      213: 6436260617427200790
+    second: go_decals-1_163
+  - first:
+      213: 8883067670069461047
+    second: go_decals-1_164
+  - first:
+      213: -4523386832841789652
+    second: go_decals-1_165
+  - first:
+      213: -8192019257330134994
+    second: go_decals-1_166
+  - first:
+      213: -4223798277264053589
+    second: go_decals-1_167
+  - first:
+      213: -1942256352858779468
+    second: go_decals-1_168
+  - first:
+      213: -6591107513061618574
+    second: go_decals-1_169
+  - first:
+      213: 118211138381578923
+    second: go_decals-1_170
+  - first:
+      213: -7578985450874520141
+    second: go_decals-1_171
+  - first:
+      213: -1463873339035875296
+    second: go_decals-1_172
+  - first:
+      213: 6938133490347782986
+    second: go_decals-1_173
+  - first:
+      213: -8858247650536820217
+    second: go_decals-1_174
+  - first:
+      213: 938333325639318820
+    second: go_decals-1_175
+  - first:
+      213: -6536902042183398615
+    second: go_decals-1_176
+  - first:
+      213: -5649746959173319165
+    second: go_decals-1_177
+  - first:
+      213: -1153439552881507212
+    second: go_decals-1_178
+  - first:
+      213: 558821114351724257
+    second: go_decals-1_179
+  - first:
+      213: 6816445490045813043
+    second: go_decals-1_180
+  - first:
+      213: -3118805029083116858
+    second: go_decals-1_181
+  - first:
+      213: -4980756184170646694
+    second: go_decals-1_182
+  - first:
+      213: -5944622505532824221
+    second: go_decals-1_183
+  - first:
+      213: -2558119767723418535
+    second: go_decals-1_184
+  - first:
+      213: 6505956787375327186
+    second: go_decals-1_185
+  - first:
+      213: -1159124687755995692
+    second: go_decals-1_186
+  - first:
+      213: 4112862028786308498
+    second: go_decals-1_187
+  - first:
+      213: 642896350764702627
+    second: go_decals-1_188
+  - first:
+      213: 3970610135509824128
+    second: go_decals-1_189
+  - first:
+      213: -8468024235995248361
+    second: go_decals-1_190
+  - first:
+      213: 2263856812042778561
+    second: go_decals-1_191
+  - first:
+      213: -5820628631131988001
+    second: go_decals-1_192
+  - first:
+      213: -5853091013685627150
+    second: go_decals-1_193
+  - first:
+      213: 4300679439336945850
+    second: go_decals-1_194
+  - first:
+      213: -3950262099447255120
+    second: go_decals-1_195
+  - first:
+      213: 545328176231654050
+    second: go_decals-1_196
+  - first:
+      213: -5269353051574471316
+    second: go_decals-1_197
+  - first:
+      213: 3804788438598406071
+    second: go_decals-1_198
+  - first:
+      213: 2243804722874296674
+    second: go_decals-1_199
+  - first:
+      213: 8796277306902479512
+    second: go_decals-1_200
+  - first:
+      213: -8031301227696305125
+    second: go_decals-1_201
+  - first:
+      213: -840025544659004114
+    second: go_decals-1_202
+  - first:
+      213: 5482743963538891704
+    second: go_decals-1_203
+  - first:
+      213: -851190684150954459
+    second: go_decals-1_204
+  - first:
+      213: -5537330132029174338
+    second: go_decals-1_205
+  - first:
+      213: 5567322574510942728
+    second: go_decals-1_206
+  - first:
+      213: -2156044665956330683
+    second: go_decals-1_207
+  - first:
+      213: -1584190135453325900
+    second: go_decals-1_208
+  - first:
+      213: 2789606322157596296
+    second: go_decals-1_209
+  - first:
+      213: -984322105918467584
+    second: go_decals-1_210
+  - first:
+      213: 6693467589625179210
+    second: go_decals-1_211
+  - first:
+      213: -549502859347043548
+    second: go_decals-1_212
+  - first:
+      213: 4244973587155705328
+    second: go_decals-1_213
+  - first:
+      213: 4785360291145819970
+    second: go_decals-1_214
+  - first:
+      213: -3574700493483011953
+    second: go_decals-1_215
+  - first:
+      213: -1894066751883991628
+    second: go_decals-1_216
+  - first:
+      213: 1050750896802121133
+    second: go_decals-1_217
+  - first:
+      213: -8330028740967851259
+    second: go_decals-1_218
+  - first:
+      213: 5710931872115084120
+    second: go_decals-1_219
+  - first:
+      213: -426649795339964284
+    second: go_decals-1_220
+  - first:
+      213: -864382996153196704
+    second: go_decals-1_221
+  - first:
+      213: -2997105061126960018
+    second: go_decals-1_222
+  - first:
+      213: 4528846856100785116
+    second: go_decals-1_223
+  - first:
+      213: 5438780249535279937
+    second: go_decals-1_224
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: go_decals-1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 855
+        width: 169
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 214dd05f64bf035c0800000000000000
+      internalID: -4237610967178030062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_1
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 855
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23247f4f2ef073390800000000000000
+      internalID: -7838779158968188366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_2
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 937
+        width: 162
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1703965da088cd990800000000000000
+      internalID: -7359858110918741903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_3
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 947
+        width: 134
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9678941207127acc0800000000000000
+      internalID: -3699951803383052439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_4
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 951
+        width: 113
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db2a5bbac4fc016c0800000000000000
+      internalID: -4174608926367178051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_5
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 954
+        width: 116
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20856cd249892e7b0800000000000000
+      internalID: -5196423257841575934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_6
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 966
+        width: 116
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4804b8d1abf2d6d0800000000000000
+      internalID: -2967032531939751858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_7
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 997
+        width: 40
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b22d7614fcf513510800000000000000
+      internalID: 1527107092415500843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_8
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 979
+        width: 40
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b4fa1597971e9960800000000000000
+      internalID: 7610546360111789237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_9
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 969
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 174f2e322f7e548c0800000000000000
+      internalID: -4015548465560750991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_10
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 970
+        width: 27
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7789cfa203d4331d0800000000000000
+      internalID: -3372266826695403401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_11
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 936
+        width: 25
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba1439ec5bdfc0f00800000000000000
+      internalID: 1084520567586111915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_12
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 879
+        width: 105
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c34b97bac5a63720800000000000000
+      internalID: 2825628106303947721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_13
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 899
+        width: 116
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49106c79f0465cb20800000000000000
+      internalID: 3154037132176523668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_14
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 911
+        width: 115
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76e36ff150cbba870800000000000000
+      internalID: 8695250235765964391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_15
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 946
+        width: 41
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ea036affed026b30800000000000000
+      internalID: 4278997920304532195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_16
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 928
+        width: 39
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7dbc54ee63fbac50800000000000000
+      internalID: 6677698530110127485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_17
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 919
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c2eade2aa629a5c0800000000000000
+      internalID: -4203786264801254714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_18
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 924
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78d5a13fc075339f0800000000000000
+      internalID: -489952221323436665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_19
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 913
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb6350f3380a82570800000000000000
+      internalID: 8442173987064460987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_20
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 930
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8279c3d1ae0013500800000000000000
+      internalID: 374081249561319208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_21
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 928
+        width: 35
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e605e39bd49a2c7e0800000000000000
+      internalID: -1746647554180886418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_22
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 923
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a403ab4893253e10800000000000000
+      internalID: 2176685131914478754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_23
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 926
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f418bf82797ac0200800000000000000
+      internalID: 147677155465855311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_24
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 909
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1db17b3a388a754b0800000000000000
+      internalID: -5451703540567827503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_25
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 855
+        width: 122
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3093858f7a574e30800000000000000
+      internalID: 4487655057445326908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_26
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 915
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 038057ea6a077d950800000000000000
+      internalID: 6473766850562164784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_27
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 918
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa9610ead051023b0800000000000000
+      internalID: -5539404393167623766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_28
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 917
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b0e83ea243ba3080800000000000000
+      internalID: -9206849389233381197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_29
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 923
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60587b4d137aa52c0800000000000000
+      internalID: -4442054249983539962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_30
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 918
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01bf1653635eca340800000000000000
+      internalID: 4876524517522012944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_31
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 922
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f4a21427f3c38110800000000000000
+      internalID: 1262067786823410931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_32
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 920
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf9820f79f3609620800000000000000
+      internalID: 2778830893316475388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_33
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 918
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79d9dbcd49b8e7980800000000000000
+      internalID: -8539234371973046889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_34
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 912
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ed3352d3c773b6c0800000000000000
+      internalID: -4128824750437614106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_35
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 911
+        width: 37
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dd0f4e500b69c160800000000000000
+      internalID: 7046280741324262865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_36
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 907
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4c95ada71d1d6a30800000000000000
+      internalID: 4210053214196046927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_37
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 909
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e51f1582570b557f0800000000000000
+      internalID: -624398956086824610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_38
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 907
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5792f0b4e9bf54e80800000000000000
+      internalID: -8194867289648060043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_39
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 904
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 294e276a1fe03cdb0800000000000000
+      internalID: -4772954749040139118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_40
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 907
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b22456aa3ba827950800000000000000
+      internalID: 6445366520983142955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_41
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 904
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c17e3e35cb855c80800000000000000
+      internalID: -8334601856110136895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_42
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 909
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03fb4abce4506d640800000000000000
+      internalID: 5104273063653195568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_43
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 898
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d580bf3386416fb0800000000000000
+      internalID: -4656363010201188910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_44
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 908
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6f777fba60d713a0800000000000000
+      internalID: -6694653164165562517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_45
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 906
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d4b323b90933e6e0800000000000000
+      internalID: -1809539911449856814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_46
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 856
+        width: 109
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98c56fea541b63e60800000000000000
+      internalID: 7941729905760689289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_47
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 891
+        width: 47
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af8761e92fe3fc6b0800000000000000
+      internalID: -5273927426872280838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_48
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 901
+        width: 17
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e2ce6e631fd7d120800000000000000
+      internalID: 2438662997794538213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_49
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 899
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15cd8527fea7d1790800000000000000
+      internalID: -7557749430823625647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_50
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 892
+        width: 26
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35a00c69dfb6a85a0800000000000000
+      internalID: -6518278773765305773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_51
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 891
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f6e3ad6261b01010800000000000000
+      internalID: 1157620140538586865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_52
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 891
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8bd07cb91c046780800000000000000
+      internalID: -8690808076242986102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_53
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 889
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a7fdd2bd436cb630800000000000000
+      internalID: 3944136559034234790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_54
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 888
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d1468a1636d54960800000000000000
+      internalID: 7585704675237052881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_55
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 894
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 762ca28c96c8b6f60800000000000000
+      internalID: 8028665146675741287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_56
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 891
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d7430be7f0d04eb0800000000000000
+      internalID: -4737557044775401517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_57
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 889
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2bfdcfc1e8c77000800000000000000
+      internalID: 33716394408147759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_58
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 890
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa9efaf9ebb96ee80800000000000000
+      internalID: -8149655232655136342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_59
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 861
+        width: 80
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f037d79499448bda0800000000000000
+      internalID: -5928913484279614705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_60
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 883
+        width: 35
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5fcd17d0a8566150800000000000000
+      internalID: 5865473012523716442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_61
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 879
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98b22426a697cd500800000000000000
+      internalID: 422345962887981961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_62
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 878
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afd3a75bf0ba14610800000000000000
+      internalID: 1603751026278153722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_63
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 879
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a20b4f6f033165ba0800000000000000
+      internalID: -6100667544204169174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_64
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 874
+        width: 39
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 414f69c5d688fe160800000000000000
+      internalID: 7057009144399066132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_65
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 858
+        width: 52
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36f6a4a7750606b70800000000000000
+      internalID: 8890211593259478883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_66
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 856
+        width: 48
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5847b96c6a3280c0800000000000000
+      internalID: -4575030034150504353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_67
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 867
+        width: 35
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac00cbb75e5002930800000000000000
+      internalID: 4116296542598201546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_68
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 871
+        width: 47
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 110c58f2ed8324af0800000000000000
+      internalID: -413705688833474543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_69
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 855
+        width: 43
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eaaac54271e0edb20800000000000000
+      internalID: 3160979481017756334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_70
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 856
+        width: 43
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b7828ef15dd2dae0800000000000000
+      internalID: -1525913979493120077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_71
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 856
+        width: 41
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb726d7d9af084570800000000000000
+      internalID: 8451021922905761726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_72
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 856
+        width: 29
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d233146ca5bd17f90800000000000000
+      internalID: -6957538766391004371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_73
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 855
+        width: 37
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6664cc6d8c92522d0800000000000000
+      internalID: -3304188809032481178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_74
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 798
+        width: 110
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3aba5da4ab555e3e0800000000000000
+      internalID: -2025118198825374813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_75
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 846
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aedfdaad105068090800000000000000
+      internalID: -8032727379846758934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_76
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 788
+        width: 102
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5349b1b9cf650750800000000000000
+      internalID: 6270540968244101983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_77
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 789
+        width: 100
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 235330c6706462ea0800000000000000
+      internalID: -5897949664304220878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_78
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 799
+        width: 100
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aca8844242b6d9610800000000000000
+      internalID: 1629576443149716170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_79
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 800
+        width: 100
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcf6e310ba614a0c0800000000000000
+      internalID: -4565499198530752565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_80
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 801
+        width: 100
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36e430688a22cfb70800000000000000
+      internalID: 8934053867994435171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_81
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 801
+        width: 99
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a4cf93bce3cadff0800000000000000
+      internalID: -10480627721714520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_82
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 801
+        width: 99
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cf1876795937bac0800000000000000
+      internalID: -3839537100907601980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_83
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 806
+        width: 99
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e0ad67c90783b4d0800000000000000
+      internalID: -3120001640767315742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_84
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 773
+        width: 103
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa4d4cb174d076820800000000000000
+      internalID: 2911310283178038442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_85
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 834
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b44f94b23829d1040800000000000000
+      internalID: 4620009884816634955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_86
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 837
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a03feacf3a03b3140800000000000000
+      internalID: 4700404116968370954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_87
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 736
+        width: 109
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7d91be0b8a055ef0800000000000000
+      internalID: -120178222692196998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_88
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 788
+        width: 22
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e8742adee9e36460800000000000000
+      internalID: 7233882638558460137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_89
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 788
+        width: 39
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36d6c7206a8fdb200800000000000000
+      internalID: 197587350564138339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_90
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 788
+        width: 38
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0429e97422571850800000000000000
+      internalID: 6347632516419625996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_91
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 792
+        width: 31
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81c80c90c47cb3850800000000000000
+      internalID: 6357894428358642712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_92
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 739
+        width: 99
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6982a3e48a0496ba0800000000000000
+      internalID: -6095269529058137962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_93
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 743
+        width: 82
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31d0dc8707d03fd00800000000000000
+      internalID: 1005161918547954963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_94
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 745
+        width: 79
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 254dcfbe0fec19f10800000000000000
+      internalID: 2274826820945499218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_95
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 746
+        width: 74
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5f7e5fe8be049f70800000000000000
+      internalID: 9192988926822743898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_96
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 758
+        width: 73
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a264f16c22fe96300800000000000000
+      internalID: 245990587300267562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_97
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 780
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c21101d1e0093c00800000000000000
+      internalID: 880736172001792712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_98
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 781
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59d21eb08633ae5f0800000000000000
+      internalID: -726711867897991787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_99
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 745
+        width: 74
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 974ca37e398e31850800000000000000
+      internalID: 6346672021832385657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_100
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 774
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2adc0b6cb20ad4ec0800000000000000
+      internalID: -3581030018812162654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_101
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 780
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8437564914edcf200800000000000000
+      internalID: 215291255450858312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_102
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 779
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc28ef8b5fe981c50800000000000000
+      internalID: 6636228829138289359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_103
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 774
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3175a4f89137d790800000000000000
+      internalID: -7505475720980369092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_104
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 757
+        width: 58
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ea562d332e9f4f80800000000000000
+      internalID: -8120097728938747166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_105
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 759
+        width: 53
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18553edb3d35a7d90800000000000000
+      internalID: -7099269693707168383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_106
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 774
+        width: 31
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c150c4a1c5bf0e910800000000000000
+      internalID: 1864766618728138012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_107
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 764
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1aaff754c3a2cd300800000000000000
+      internalID: 278143715342547617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_108
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 764
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3e5561658864ca60800000000000000
+      internalID: 7693388985529622076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_109
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 764
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31770fc169aa11530800000000000000
+      internalID: 3824025120321599251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_110
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 761
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47da53dd5f8965a60800000000000000
+      internalID: 7662479997763169652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_111
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 764
+        width: 42
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e237a2d27067b7870800000000000000
+      internalID: 8681662479881368366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_112
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 756
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e396bce60c55aa5a0800000000000000
+      internalID: -6509296026429724354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_113
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 760
+        width: 31
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ffc10c43e313ddb0800000000000000
+      internalID: -4768445713501532167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_114
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 694
+        width: 103
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 187c0a8be5d5f9440800000000000000
+      internalID: 4944773577281947521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_115
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 744
+        width: 34
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65d66541baf891040800000000000000
+      internalID: 4618880857788542294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_116
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 742
+        width: 33
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dbf3f86e4d701bd0800000000000000
+      internalID: -2661489604054221868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_117
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 748
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87baa3c23744d38a0800000000000000
+      internalID: -6323823040304338056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_118
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 749
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8738b260db0c65f0800000000000000
+      internalID: -762221247295113334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_119
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 741
+        width: 32
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02b9b7e900ecdea70800000000000000
+      internalID: 8857962544161856288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_120
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 743
+        width: 31
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05683bb467d248ab0800000000000000
+      internalID: -5006826899629701552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_121
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 739
+        width: 45
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d4c2c132774d6110800000000000000
+      internalID: 1255738426892928215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_122
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 746
+        width: 31
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dc6b7f156b5f5800800000000000000
+      internalID: 603301364968942804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_123
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 674
+        width: 108
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a2d5c5ccc2d8e1e0800000000000000
+      internalID: -2168251443645656409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_124
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 675
+        width: 98
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cea5e2d0c8837bdb0800000000000000
+      internalID: -4776286705635403028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_125
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 731
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a803ab7240fbf4010800000000000000
+      internalID: 1175368052334276746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_126
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 731
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eedc292315f6c5590800000000000000
+      internalID: -7684144469669392914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_127
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 732
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bee8147597e6a34b0800000000000000
+      internalID: -5459930130799292693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_128
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 719
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dab199926dfc33360800000000000000
+      internalID: 7148285552294960045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_129
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 712
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b597653a9fa413a30800000000000000
+      internalID: 4193215164106307931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_130
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 713
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1032b578628e7080800000000000000
+      internalID: -9187762804626411489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_131
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 702
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e08582661390e03b0800000000000000
+      internalID: -5544483983474534386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_132
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 696
+        width: 22
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ab30f5166332d090800000000000000
+      internalID: -8011284273590944855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_133
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 704
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa5c9dc2b2960f590800000000000000
+      internalID: -7642492933490752086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_134
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 696
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a271f8167bd5af150800000000000000
+      internalID: 5907136903446992682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_135
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 695
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a86986ce8ee5a9230800000000000000
+      internalID: 3646331202801538698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_136
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 638
+        width: 103
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caa2c2177ddf123f0800000000000000
+      internalID: -927180946503095636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_137
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 686
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d5790b0385f734c0800000000000000
+      internalID: -4307704575381899817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_138
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 681
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0769bbbc2c25f1670800000000000000
+      internalID: 8511612817348728432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_139
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 681
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20d3f77b3db87ab40800000000000000
+      internalID: 5451479615388204290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_140
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 612
+        width: 108
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6c47cd84000fad80800000000000000
+      internalID: -8237365173878829971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_141
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 619
+        width: 97
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0e205da50b1c3410800000000000000
+      internalID: 1458070090557697548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_142
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 666
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25506ab308d6c89c0800000000000000
+      internalID: -3923640777822567086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_143
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 673
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 067dda875e9d26fc0800000000000000
+      internalID: -3502997980545427616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_144
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 655
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89f614a837836eed0800000000000000
+      internalID: -2385156883754160232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_145
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 586
+        width: 103
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae759405a9a3206b0800000000000000
+      internalID: -5331634574406887446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_146
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 635
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b8080af77634c7a0800000000000000
+      internalID: -6357896885016459086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_147
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 629
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7fc9e010d1090a40800000000000000
+      internalID: 5334797226745646975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_148
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 564
+        width: 97
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c799183fd0664ee0800000000000000
+      internalID: -1277226932477782072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_149
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 619
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cf045bf6c6eaabf0800000000000000
+      internalID: -312183481854324792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_150
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 556
+        width: 108
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3616e96a13eb29620800000000000000
+      internalID: 2779493040499089763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_151
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 597
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73ca0ca6f56cf7f30800000000000000
+      internalID: 4575593859546917943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_152
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 606
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d14b7cbcdb7c9f170800000000000000
+      internalID: 8212815013468419101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_153
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 517
+        width: 103
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eee38d230da5ec1d0800000000000000
+      internalID: -3328623224327487762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_154
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 586
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 357b6e8aa91ce7af0800000000000000
+      internalID: -396666847159208109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_155
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 568
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd2c6af79b96cf1b0800000000000000
+      internalID: -5621501989433720097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_156
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 562
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5227ad2ac615bad30800000000000000
+      internalID: 4443734984361669157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_157
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 500
+        width: 108
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c739891ada0f50f70800000000000000
+      internalID: 9152986446231540604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_158
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 495
+        width: 97
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d7cf341d4a2b0970800000000000000
+      internalID: 8722111613873670099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_159
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 552
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3a82b953add43ff0800000000000000
+      internalID: -57177201594693058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_160
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 531
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66d93d78cee42d9d0800000000000000
+      internalID: -2751049644571910810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_161
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 538
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03643f26819f52340800000000000000
+      internalID: 4838547257814107696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_162
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 525
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68d06e43b51cdab10800000000000000
+      internalID: 1994462807468674438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_163
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 521
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61ba5974ee0325950800000000000000
+      internalID: 6436260617427200790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_164
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 437
+        width: 102
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7304f3e3bfef64b70800000000000000
+      internalID: 8883067670069461047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_165
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 512
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2f29c634a3b931c0800000000000000
+      internalID: -4523386832841789652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_166
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 513
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e209dad73e9105e80800000000000000
+      internalID: -8192019257330134994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_167
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 501
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baae4c078dd0265c0800000000000000
+      internalID: -4223798277264053589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_168
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 502
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b05b193328bb05e0800000000000000
+      internalID: -1942256352858779468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_169
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 448
+        width: 106
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27ccd8753aea784a0800000000000000
+      internalID: -6591107513061618574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_170
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 488
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba28abf6768f3a100800000000000000
+      internalID: 118211138381578923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_171
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 491
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bd35ca33e802d690800000000000000
+      internalID: -7578985450874520141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_172
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 495
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0280a9e34f64fabe0800000000000000
+      internalID: -1463873339035875296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_173
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 485
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a43bb6056a3394060800000000000000
+      internalID: 6938133490347782986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_174
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 472
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7027051e1be211580800000000000000
+      internalID: -8858247650536820217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_175
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 461
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42d74ab2031a50d00800000000000000
+      internalID: 938333325639318820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_176
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 466
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92b02240a324845a0800000000000000
+      internalID: -6536902042183398615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_177
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 468
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30681a303111891b0800000000000000
+      internalID: -5649746959173319165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_178
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 471
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 474cc9c76d82effe0800000000000000
+      internalID: -1153439552881507212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_179
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 456
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e62cedb7d451c700800000000000000
+      internalID: 558821114351724257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_180
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 396
+        width: 106
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3318ef0ee01e89e50800000000000000
+      internalID: 6816445490045813043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_181
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 439
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ca8cc5a957c7b4d0800000000000000
+      internalID: -3118805029083116858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_182
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 383
+        width: 91
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a53bda1c3acc0eab0800000000000000
+      internalID: -4980756184170646694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_183
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 443
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3656ce1c355708da0800000000000000
+      internalID: -5944622505532824221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_184
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 432
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95cd0ffef9bbf7cd0800000000000000
+      internalID: -2558119767723418535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_185
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 427
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d74c836a3dc94a50800000000000000
+      internalID: 6505956787375327186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_186
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 428
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d51befdc36f9efe0800000000000000
+      internalID: -1159124687755995692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_187
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 429
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 295100c6932d31930800000000000000
+      internalID: 4112862028786308498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_188
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 387
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ab99b623d60ce800800000000000000
+      internalID: 642896350764702627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_189
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 362
+        width: 102
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 082f0ac81e07a1730800000000000000
+      internalID: 3970610135509824128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_190
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 316
+        width: 104
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 719ca18a2d88b7a80800000000000000
+      internalID: -8468024235995248361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_191
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 347
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c77820b6c5da6f10800000000000000
+      internalID: 2263856812042778561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_192
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 353
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdfd8e75919f83fa0800000000000000
+      internalID: -5820628631131988001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_193
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 327
+        width: 95
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f6bc3bebb4a5cea0800000000000000
+      internalID: -5853091013685627150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_194
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 277
+        width: 102
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab831820a251fab30800000000000000
+      internalID: 4300679439336945850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_195
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 343
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bfe1c8cc89dd29c0800000000000000
+      internalID: -3950262099447255120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_196
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 258
+        width: 104
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a2ac464615619700800000000000000
+      internalID: 545328176231654050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_197
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 268
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6578cc515f7fd6b0800000000000000
+      internalID: -5269353051574471316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_198
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 269
+        width: 94
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bfcb202de25dc430800000000000000
+      internalID: 3804788438598406071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_199
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 215
+        width: 94
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 269244cd188932f10800000000000000
+      internalID: 2243804722874296674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_200
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 194
+        width: 102
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89280cf1b97a21a70800000000000000
+      internalID: 8796277306902479512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_201
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 258
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1cc007c5161b8090800000000000000
+      internalID: -8031301227696305125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_202
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 261
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e259850c731a754f0800000000000000
+      internalID: -840025544659004114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_203
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 202
+        width: 104
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b32725069e961c40800000000000000
+      internalID: 5482743963538891704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_204
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 147
+        width: 104
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5268f032596ff24f0800000000000000
+      internalID: -851190684150954459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_205
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 160
+        width: 86
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebd855c35937723b0800000000000000
+      internalID: -5537330132029174338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_206
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 92
+        width: 104
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80aecb3726a134d40800000000000000
+      internalID: 5567322574510942728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_207
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 126
+        width: 102
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5431ccdacc03412e0800000000000000
+      internalID: -2156044665956330683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_208
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 58
+        width: 102
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b560a71773d30ae0800000000000000
+      internalID: -1584190135453325900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_209
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 105
+        width: 86
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88e23678b2ca6b620800000000000000
+      internalID: 2789606322157596296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_210
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 96
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0025a24824cf652f0800000000000000
+      internalID: -984322105918467584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_211
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 37
+        width: 104
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4ce23b2f49f3ec50800000000000000
+      internalID: 6693467589625179210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_212
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 84
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42bde819f06cf58f0800000000000000
+      internalID: -549502859347043548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_213
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 87
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fdd4579cfc29ea30800000000000000
+      internalID: 4244973587155705328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_214
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 68
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 247a104b4d3096240800000000000000
+      internalID: 4785360291145819970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_215
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 62
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f80188b37dc146ec0800000000000000
+      internalID: -3574700493483011953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_216
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 65
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b5a319035ce6b5e0800000000000000
+      internalID: -1894066751883991628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_217
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 0
+        width: 101
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da5405f9f54059e00800000000000000
+      internalID: 1050750896802121133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_218
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 51
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50b11d59efac56c80800000000000000
+      internalID: -8330028740967851259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_219
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 18
+        width: 45
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85b40e5a74e414f40800000000000000
+      internalID: 5710931872115084120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_220
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 14
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 480b449854c341af0800000000000000
+      internalID: -426649795339964284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_221
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 38
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06f9664ae381104f0800000000000000
+      internalID: -864382996153196704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_222
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 0
+        width: 75
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6c800583d42866d0800000000000000
+      internalID: -2997105061126960018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_223
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 21
+        width: 34
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdb28048832b9de30800000000000000
+      internalID: 4528846856100785116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_decals-1_224
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 5
+        width: 34
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 143f5f032dd6a7b40800000000000000
+      internalID: 5438780249535279937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      go_decals-1_0: -4237610967178030062
+      go_decals-1_1: -7838779158968188366
+      go_decals-1_10: -3372266826695403401
+      go_decals-1_100: -3581030018812162654
+      go_decals-1_101: 215291255450858312
+      go_decals-1_102: 6636228829138289359
+      go_decals-1_103: -7505475720980369092
+      go_decals-1_104: -8120097728938747166
+      go_decals-1_105: -7099269693707168383
+      go_decals-1_106: 1864766618728138012
+      go_decals-1_107: 278143715342547617
+      go_decals-1_108: 7693388985529622076
+      go_decals-1_109: 3824025120321599251
+      go_decals-1_11: 1084520567586111915
+      go_decals-1_110: 7662479997763169652
+      go_decals-1_111: 8681662479881368366
+      go_decals-1_112: -6509296026429724354
+      go_decals-1_113: -4768445713501532167
+      go_decals-1_114: 4944773577281947521
+      go_decals-1_115: 4618880857788542294
+      go_decals-1_116: -2661489604054221868
+      go_decals-1_117: -6323823040304338056
+      go_decals-1_118: -762221247295113334
+      go_decals-1_119: 8857962544161856288
+      go_decals-1_12: 2825628106303947721
+      go_decals-1_120: -5006826899629701552
+      go_decals-1_121: 1255738426892928215
+      go_decals-1_122: 603301364968942804
+      go_decals-1_123: -2168251443645656409
+      go_decals-1_124: -4776286705635403028
+      go_decals-1_125: 1175368052334276746
+      go_decals-1_126: -7684144469669392914
+      go_decals-1_127: -5459930130799292693
+      go_decals-1_128: 7148285552294960045
+      go_decals-1_129: 4193215164106307931
+      go_decals-1_13: 3154037132176523668
+      go_decals-1_130: -9187762804626411489
+      go_decals-1_131: -5544483983474534386
+      go_decals-1_132: -8011284273590944855
+      go_decals-1_133: -7642492933490752086
+      go_decals-1_134: 5907136903446992682
+      go_decals-1_135: 3646331202801538698
+      go_decals-1_136: -927180946503095636
+      go_decals-1_137: -4307704575381899817
+      go_decals-1_138: 8511612817348728432
+      go_decals-1_139: 5451479615388204290
+      go_decals-1_14: 8695250235765964391
+      go_decals-1_140: -8237365173878829971
+      go_decals-1_141: 1458070090557697548
+      go_decals-1_142: -3923640777822567086
+      go_decals-1_143: -3502997980545427616
+      go_decals-1_144: -2385156883754160232
+      go_decals-1_145: -5331634574406887446
+      go_decals-1_146: -6357896885016459086
+      go_decals-1_147: 5334797226745646975
+      go_decals-1_148: -1277226932477782072
+      go_decals-1_149: -312183481854324792
+      go_decals-1_15: 4278997920304532195
+      go_decals-1_150: 2779493040499089763
+      go_decals-1_151: 4575593859546917943
+      go_decals-1_152: 8212815013468419101
+      go_decals-1_153: -3328623224327487762
+      go_decals-1_154: -396666847159208109
+      go_decals-1_155: -5621501989433720097
+      go_decals-1_156: 4443734984361669157
+      go_decals-1_157: 9152986446231540604
+      go_decals-1_158: 8722111613873670099
+      go_decals-1_159: -57177201594693058
+      go_decals-1_16: 6677698530110127485
+      go_decals-1_160: -2751049644571910810
+      go_decals-1_161: 4838547257814107696
+      go_decals-1_162: 1994462807468674438
+      go_decals-1_163: 6436260617427200790
+      go_decals-1_164: 8883067670069461047
+      go_decals-1_165: -4523386832841789652
+      go_decals-1_166: -8192019257330134994
+      go_decals-1_167: -4223798277264053589
+      go_decals-1_168: -1942256352858779468
+      go_decals-1_169: -6591107513061618574
+      go_decals-1_17: -4203786264801254714
+      go_decals-1_170: 118211138381578923
+      go_decals-1_171: -7578985450874520141
+      go_decals-1_172: -1463873339035875296
+      go_decals-1_173: 6938133490347782986
+      go_decals-1_174: -8858247650536820217
+      go_decals-1_175: 938333325639318820
+      go_decals-1_176: -6536902042183398615
+      go_decals-1_177: -5649746959173319165
+      go_decals-1_178: -1153439552881507212
+      go_decals-1_179: 558821114351724257
+      go_decals-1_18: -489952221323436665
+      go_decals-1_180: 6816445490045813043
+      go_decals-1_181: -3118805029083116858
+      go_decals-1_182: -4980756184170646694
+      go_decals-1_183: -5944622505532824221
+      go_decals-1_184: -2558119767723418535
+      go_decals-1_185: 6505956787375327186
+      go_decals-1_186: -1159124687755995692
+      go_decals-1_187: 4112862028786308498
+      go_decals-1_188: 642896350764702627
+      go_decals-1_189: 3970610135509824128
+      go_decals-1_19: 8442173987064460987
+      go_decals-1_190: -8468024235995248361
+      go_decals-1_191: 2263856812042778561
+      go_decals-1_192: -5820628631131988001
+      go_decals-1_193: -5853091013685627150
+      go_decals-1_194: 4300679439336945850
+      go_decals-1_195: -3950262099447255120
+      go_decals-1_196: 545328176231654050
+      go_decals-1_197: -5269353051574471316
+      go_decals-1_198: 3804788438598406071
+      go_decals-1_199: 2243804722874296674
+      go_decals-1_2: -7359858110918741903
+      go_decals-1_20: 374081249561319208
+      go_decals-1_200: 8796277306902479512
+      go_decals-1_201: -8031301227696305125
+      go_decals-1_202: -840025544659004114
+      go_decals-1_203: 5482743963538891704
+      go_decals-1_204: -851190684150954459
+      go_decals-1_205: -5537330132029174338
+      go_decals-1_206: 5567322574510942728
+      go_decals-1_207: -2156044665956330683
+      go_decals-1_208: -1584190135453325900
+      go_decals-1_209: 2789606322157596296
+      go_decals-1_21: -1746647554180886418
+      go_decals-1_210: -984322105918467584
+      go_decals-1_211: 6693467589625179210
+      go_decals-1_212: -549502859347043548
+      go_decals-1_213: 4244973587155705328
+      go_decals-1_214: 4785360291145819970
+      go_decals-1_215: -3574700493483011953
+      go_decals-1_216: -1894066751883991628
+      go_decals-1_217: 1050750896802121133
+      go_decals-1_218: -8330028740967851259
+      go_decals-1_219: 5710931872115084120
+      go_decals-1_22: 2176685131914478754
+      go_decals-1_220: -426649795339964284
+      go_decals-1_221: -864382996153196704
+      go_decals-1_222: -2997105061126960018
+      go_decals-1_223: 4528846856100785116
+      go_decals-1_224: 5438780249535279937
+      go_decals-1_23: 147677155465855311
+      go_decals-1_24: -5451703540567827503
+      go_decals-1_25: 4487655057445326908
+      go_decals-1_26: 6473766850562164784
+      go_decals-1_27: -5539404393167623766
+      go_decals-1_28: -9206849389233381197
+      go_decals-1_29: -4442054249983539962
+      go_decals-1_3: -3699951803383052439
+      go_decals-1_30: 4876524517522012944
+      go_decals-1_31: 1262067786823410931
+      go_decals-1_32: 2778830893316475388
+      go_decals-1_33: -8539234371973046889
+      go_decals-1_34: -4128824750437614106
+      go_decals-1_35: 7046280741324262865
+      go_decals-1_36: 4210053214196046927
+      go_decals-1_37: -624398956086824610
+      go_decals-1_38: -8194867289648060043
+      go_decals-1_39: -4772954749040139118
+      go_decals-1_4: -4174608926367178051
+      go_decals-1_40: 6445366520983142955
+      go_decals-1_41: -8334601856110136895
+      go_decals-1_42: 5104273063653195568
+      go_decals-1_43: -4656363010201188910
+      go_decals-1_44: -6694653164165562517
+      go_decals-1_45: -1809539911449856814
+      go_decals-1_46: 7941729905760689289
+      go_decals-1_47: -5273927426872280838
+      go_decals-1_48: 2438662997794538213
+      go_decals-1_49: -7557749430823625647
+      go_decals-1_5: -5196423257841575934
+      go_decals-1_50: -6518278773765305773
+      go_decals-1_51: 1157620140538586865
+      go_decals-1_52: -8690808076242986102
+      go_decals-1_53: 3944136559034234790
+      go_decals-1_54: 7585704675237052881
+      go_decals-1_55: 8028665146675741287
+      go_decals-1_56: -4737557044775401517
+      go_decals-1_57: 33716394408147759
+      go_decals-1_58: -8149655232655136342
+      go_decals-1_59: -5928913484279614705
+      go_decals-1_6: -2967032531939751858
+      go_decals-1_60: 5865473012523716442
+      go_decals-1_61: 422345962887981961
+      go_decals-1_62: 1603751026278153722
+      go_decals-1_63: -6100667544204169174
+      go_decals-1_64: 7057009144399066132
+      go_decals-1_65: 8890211593259478883
+      go_decals-1_66: -4575030034150504353
+      go_decals-1_67: 4116296542598201546
+      go_decals-1_68: -413705688833474543
+      go_decals-1_69: 3160979481017756334
+      go_decals-1_7: 1527107092415500843
+      go_decals-1_70: -1525913979493120077
+      go_decals-1_71: 8451021922905761726
+      go_decals-1_72: -6957538766391004371
+      go_decals-1_73: -3304188809032481178
+      go_decals-1_74: -2025118198825374813
+      go_decals-1_75: -8032727379846758934
+      go_decals-1_76: 6270540968244101983
+      go_decals-1_77: -5897949664304220878
+      go_decals-1_78: 1629576443149716170
+      go_decals-1_79: -4565499198530752565
+      go_decals-1_8: 7610546360111789237
+      go_decals-1_80: 8934053867994435171
+      go_decals-1_81: -10480627721714520
+      go_decals-1_82: -3839537100907601980
+      go_decals-1_83: -3120001640767315742
+      go_decals-1_84: 2911310283178038442
+      go_decals-1_85: 4620009884816634955
+      go_decals-1_86: 4700404116968370954
+      go_decals-1_87: -120178222692196998
+      go_decals-1_88: 7233882638558460137
+      go_decals-1_89: 197587350564138339
+      go_decals-1_9: -4015548465560750991
+      go_decals-1_90: 6347632516419625996
+      go_decals-1_91: 6357894428358642712
+      go_decals-1_92: -6095269529058137962
+      go_decals-1_93: 1005161918547954963
+      go_decals-1_94: 2274826820945499218
+      go_decals-1_95: 9192988926822743898
+      go_decals-1_96: 245990587300267562
+      go_decals-1_97: 880736172001792712
+      go_decals-1_98: -726711867897991787
+      go_decals-1_99: 6346672021832385657
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -16,9 +16,20 @@ public class TowerController2D : MonoBehaviour
     [Header("Performance")]
     [SerializeField] private float targetScanInterval = 0.1f;
 
+    [Header("Interaction")]
+    [SerializeField] private bool ensureClickCollider = true;
+
     private Transform currentTarget;
     private float scanTimer;
     private float fireTimer;
+
+    public float Range => range;
+    protected Vector3 FirePointPosition => firePoint != null ? firePoint.position : transform.position;
+
+    public void SetRange(float value)
+    {
+        range = Mathf.Max(0f, value);
+    }
 
     private void Awake()
     {
@@ -33,6 +44,8 @@ public class TowerController2D : MonoBehaviour
         targetScanInterval = Mathf.Max(0.01f, targetScanInterval);
         range = Mathf.Max(0f, range);
         damage = Mathf.Max(1, damage);
+
+        EnsureClickCollider();
     }
 
     protected virtual void OnEnable()
@@ -141,11 +154,30 @@ public class TowerController2D : MonoBehaviour
             return;
         }
 
-        Vector3 spawnPosition = firePoint != null ? firePoint.position : transform.position;
-        Projectile2D projectile = CentralObjectPool.SpawnProjectile(projectilePrefab, spawnPosition, Quaternion.identity);
+        GameObject projectileObject = CentralObjectPool.Spawn(projectilePrefab.gameObject, FirePointPosition, Quaternion.identity);
+        Projectile2D projectile = projectileObject != null ? projectileObject.GetComponent<Projectile2D>() : null;
         if (projectile != null)
         {
             projectile.Init(target, damage);
+        }
+    }
+
+    private void EnsureClickCollider()
+    {
+        if (!ensureClickCollider || TryGetComponent<Collider2D>(out _))
+        {
+            return;
+        }
+
+        BoxCollider2D clickCollider = gameObject.AddComponent<BoxCollider2D>();
+        clickCollider.isTrigger = true;
+
+        SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+        if (spriteRenderer != null && spriteRenderer.sprite != null)
+        {
+            Bounds spriteBounds = spriteRenderer.sprite.bounds;
+            clickCollider.offset = spriteBounds.center;
+            clickCollider.size = spriteBounds.size;
         }
     }
 

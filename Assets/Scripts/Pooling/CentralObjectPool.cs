@@ -4,22 +4,15 @@ using UnityEngine;
 
 public class CentralObjectPool : MonoBehaviour
 {
-    public enum PoolCategory
-    {
-        Projectile,
-        Enemy,
-        Tower
-    }
-
     [Serializable]
     private class PoolPreset
     {
-        [SerializeField] private PoolCategory category = PoolCategory.Projectile;
+        [SerializeField] private string id = "";
         [SerializeField] private GameObject prefab;
         [SerializeField, Min(0)] private int initialSize = 0;
         [SerializeField, Min(1)] private int maxSize = 128;
 
-        public PoolCategory Category => category;
+        public string Id => id != null ? id.Trim() : string.Empty;
         public GameObject Prefab => prefab;
         public int InitialSize => Mathf.Max(0, initialSize);
         public int MaxSize => Mathf.Max(1, maxSize);
@@ -28,26 +21,26 @@ public class CentralObjectPool : MonoBehaviour
     private sealed class PooledObject : MonoBehaviour
     {
         public GameObject SourcePrefab;
-        public PoolCategory Category;
+        public string PoolId;
         public bool IsPooled;
     }
 
     private sealed class PoolState
     {
-        public PoolState(GameObject prefab, PoolCategory category, int maxSize, Transform root)
+        public PoolState(string id, GameObject prefab, int maxSize, Transform root)
         {
+            Id = id;
             Prefab = prefab;
-            Category = category;
             MaxSize = Mathf.Max(1, maxSize);
             Available = new Queue<GameObject>();
 
-            GameObject container = new GameObject($"{prefab.name}_{category}_Pool");
+            GameObject container = new GameObject($"{Id}_Pool");
             Container = container.transform;
             Container.SetParent(root, false);
         }
 
+        public string Id { get; }
         public GameObject Prefab { get; }
-        public PoolCategory Category { get; }
         public int MaxSize { get; }
         public Queue<GameObject> Available { get; }
         public Transform Container { get; }
@@ -59,6 +52,7 @@ public class CentralObjectPool : MonoBehaviour
     [SerializeField] private List<PoolPreset> presets = new List<PoolPreset>();
 
     private static CentralObjectPool instance;
+    private readonly Dictionary<string, PoolState> poolsById = new Dictionary<string, PoolState>(StringComparer.Ordinal);
     private readonly Dictionary<int, PoolState> poolsByPrefabId = new Dictionary<int, PoolState>();
 
     public static CentralObjectPool Instance => EnsureInstance();
@@ -81,56 +75,25 @@ public class CentralObjectPool : MonoBehaviour
         InitializePresets();
     }
 
-    public static Projectile2D SpawnProjectile(Projectile2D prefab, Vector3 position, Quaternion rotation)
+    public static GameObject Spawn(GameObject prefab, Vector3 position, Quaternion rotation)
     {
         if (prefab == null)
         {
             return null;
         }
 
-        GameObject projectileObject = Spawn(PoolCategory.Projectile, prefab.gameObject, position, rotation);
-        return projectileObject != null ? projectileObject.GetComponent<Projectile2D>() : null;
+        return Instance.SpawnInternal(prefab, null, position, rotation);
     }
 
-    public static GameObject SpawnEnemy(GameObject prefab, Vector3 position, Quaternion rotation)
+    public static GameObject Spawn(string presetId, Vector3 position, Quaternion rotation)
     {
-        return Spawn(PoolCategory.Enemy, prefab, position, rotation);
-    }
-
-    public static GameObject SpawnTower(GameObject prefab, Vector3 position, Quaternion rotation)
-    {
-        return Spawn(PoolCategory.Tower, prefab, position, rotation);
-    }
-
-    public static GameObject Spawn(PoolCategory category, GameObject prefab, Vector3 position, Quaternion rotation)
-    {
-        if (prefab == null)
+        if (string.IsNullOrWhiteSpace(presetId))
         {
+            Debug.LogWarning("Cannot spawn from an empty pool preset id.");
             return null;
         }
 
-        return Instance.SpawnInternal(category, prefab, position, rotation);
-    }
-
-    public static void DespawnProjectile(Projectile2D projectile)
-    {
-        if (projectile != null)
-        {
-            Despawn(projectile.gameObject);
-        }
-    }
-
-    public static void DespawnEnemy(EnemyMovement enemy)
-    {
-        if (enemy != null)
-        {
-            Despawn(enemy.gameObject);
-        }
-    }
-
-    public static void DespawnTower(GameObject towerObject)
-    {
-        Despawn(towerObject);
+        return Instance.SpawnInternal(null, presetId.Trim(), position, rotation);
     }
 
     public static void Despawn(GameObject instanceObject)
@@ -177,14 +140,26 @@ public class CentralObjectPool : MonoBehaviour
                 continue;
             }
 
-            PoolState state = GetOrCreateState(preset.Prefab, preset.Category, preset.MaxSize);
+            string poolId = string.IsNullOrWhiteSpace(preset.Id) ? preset.Prefab.name : preset.Id;
+
+            PoolState state = CreateState(poolId, preset.Prefab, preset.MaxSize);
+            if (state == null)
+            {
+                continue;
+            }
+
             Prewarm(state, preset.InitialSize);
         }
     }
 
-    private GameObject SpawnInternal(PoolCategory category, GameObject prefab, Vector3 position, Quaternion rotation)
+    private GameObject SpawnInternal(GameObject prefab, string presetId, Vector3 position, Quaternion rotation)
     {
-        PoolState state = GetOrCreateState(prefab, category, defaultMaxPoolSize);
+        PoolState state = GetOrCreateState(prefab, presetId, defaultMaxPoolSize);
+        if (state == null)
+        {
+            return null;
+        }
+
         GameObject instanceObject = GetAvailableObject(state);
 
         instanceObject.transform.SetParent(null);
@@ -192,7 +167,7 @@ public class CentralObjectPool : MonoBehaviour
 
         PooledObject marker = GetOrAddMarker(instanceObject);
         marker.SourcePrefab = state.Prefab;
-        marker.Category = state.Category;
+        marker.PoolId = state.Id;
         marker.IsPooled = false;
 
         instanceObject.SetActive(true);
@@ -213,7 +188,13 @@ public class CentralObjectPool : MonoBehaviour
             return;
         }
 
-        PoolState state = GetOrCreateState(marker.SourcePrefab, marker.Category, defaultMaxPoolSize);
+        PoolState state = GetOrCreateState(marker.SourcePrefab, marker.PoolId, defaultMaxPoolSize);
+        if (state == null)
+        {
+            Destroy(instanceObject);
+            return;
+        }
+
         if (state.Available.Count >= state.MaxSize)
         {
             Destroy(instanceObject);
@@ -226,17 +207,86 @@ public class CentralObjectPool : MonoBehaviour
         state.Available.Enqueue(instanceObject);
     }
 
-    private PoolState GetOrCreateState(GameObject prefab, PoolCategory category, int maxSize)
+    private PoolState GetOrCreateState(GameObject prefab, string presetId, int maxSize)
     {
+        if (!string.IsNullOrWhiteSpace(presetId) && poolsById.TryGetValue(presetId, out PoolState byId))
+        {
+            return byId;
+        }
+
+        if (prefab == null)
+        {
+            if (!string.IsNullOrWhiteSpace(presetId))
+            {
+                Debug.LogWarning($"Pool preset '{presetId}' was not found.", this);
+            }
+
+            return null;
+        }
+
         int prefabId = prefab.GetInstanceID();
         if (poolsByPrefabId.TryGetValue(prefabId, out PoolState existingState))
         {
             return existingState;
         }
 
-        PoolState state = new PoolState(prefab, category, maxSize, transform);
-        poolsByPrefabId.Add(prefabId, state);
+        string resolvedId = ResolvePoolId(presetId, prefabId, prefab);
+        return CreateState(resolvedId, prefab, maxSize);
+    }
+
+    private PoolState CreateState(string poolId, GameObject prefab, int maxSize)
+    {
+        if (prefab == null)
+        {
+            return null;
+        }
+
+        if (string.IsNullOrWhiteSpace(poolId))
+        {
+            poolId = ResolvePoolId(null, prefab.GetInstanceID(), prefab);
+        }
+
+        if (poolsById.TryGetValue(poolId, out PoolState existingById))
+        {
+            if (existingById.Prefab == prefab)
+            {
+                poolsByPrefabId[prefab.GetInstanceID()] = existingById;
+                return existingById;
+            }
+
+            string originalPoolId = poolId;
+            int prefabId = prefab.GetInstanceID();
+            int suffix = 0;
+
+            do
+            {
+                poolId = suffix == 0
+                    ? $"{originalPoolId}_{prefabId}"
+                    : $"{originalPoolId}_{prefabId}_{suffix}";
+                suffix++;
+            }
+            while (poolsById.ContainsKey(poolId));
+
+            Debug.LogWarning(
+                $"Pool id '{originalPoolId}' is already assigned to another prefab. Using '{poolId}' instead.",
+                this
+            );
+        }
+
+        PoolState state = new PoolState(poolId, prefab, maxSize, transform);
+        poolsById.Add(poolId, state);
+        poolsByPrefabId[prefab.GetInstanceID()] = state;
         return state;
+    }
+
+    private static string ResolvePoolId(string presetId, int prefabId, GameObject prefab)
+    {
+        if (!string.IsNullOrWhiteSpace(presetId))
+        {
+            return presetId;
+        }
+
+        return $"{prefab.name}_{prefabId}";
     }
 
     private GameObject GetAvailableObject(PoolState state)
@@ -260,7 +310,7 @@ public class CentralObjectPool : MonoBehaviour
 
         PooledObject marker = GetOrAddMarker(created);
         marker.SourcePrefab = state.Prefab;
-        marker.Category = state.Category;
+        marker.PoolId = state.Id;
         marker.IsPooled = true;
 
         return created;

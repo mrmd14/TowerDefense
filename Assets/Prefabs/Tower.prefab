@@ -60,7 +60,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.25, y: -0.345, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4811068167955689269}
   - {fileID: 8630103088111666346}
@@ -147,6 +147,7 @@ MonoBehaviour:
   firePoint: {fileID: 4811068167955689269}
   projectilePrefab: {fileID: 6941760044416398633, guid: 804a6c01c709bed47b3f179c63440c83, type: 3}
   targetScanInterval: 0.1
+  ensureClickCollider: 1
   archerAnimator: {fileID: 987033862538343830}
   archerRenderer: {fileID: 0}
   idleStateName: idle

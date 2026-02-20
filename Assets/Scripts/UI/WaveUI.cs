@@ -126,7 +126,7 @@ public class WaveUI : MonoBehaviour
 
         if (waveLabel != null)
         {
-            waveLabel.text = $"Wave: {displayedWave}/{totalWaves}";
+            waveLabel.text = $"{displayedWave}/{totalWaves}";
         }
 
         if (startNextWaveButton != null)

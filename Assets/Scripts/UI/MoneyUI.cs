@@ -122,7 +122,7 @@ public class MoneyUI : MonoBehaviour
             return;
         }
 
-        moneyLabel.text = $"Money: {newMoney}";
+        moneyLabel.text = $"{newMoney}";
     }
 
     private IEnumerator ShowWarningRoutine()

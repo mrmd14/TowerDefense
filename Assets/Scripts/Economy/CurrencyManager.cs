@@ -5,9 +5,11 @@ public class CurrencyManager : MonoBehaviour
 {
     public static CurrencyManager Instance { get; private set; }
 
-    [Header("Starting Values")]
-    [SerializeField] private int startingMoney = 100;
-    [SerializeField] private int killReward = 5;
+    [Header("Gameplay Data")]
+    [SerializeField] private GamePlayData gamePlayData;
+
+
+    private int startingMoney = 100;
 
     public event Action<int> OnMoneyChanged;
 
@@ -22,8 +24,8 @@ public class CurrencyManager : MonoBehaviour
         }
 
         Instance = this;
-        startingMoney = Mathf.Max(0, startingMoney);
-        killReward = Mathf.Max(0, killReward);
+        int configuredStartingMoney = gamePlayData != null ? gamePlayData.StartingMoney : startingMoney;
+        startingMoney = Mathf.Max(0, configuredStartingMoney);
         Money = startingMoney;
     }
 
@@ -90,6 +92,6 @@ public class CurrencyManager : MonoBehaviour
             return;
         }
 
-        Add(killReward);
+        Add(enemy.KillReward);
     }
 }

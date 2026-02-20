@@ -107,10 +107,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ArrowProjectile2D
   arcHeight: 0.35
   arcHeightPerUnitDistance: 0.35
-  gravityScale: 2
+  gravityScale: 3
   hitDistance: 0.15
   maxLifetime: 4
   useTriggerHit: 1
+  enemyHitParticlePrefab: {fileID: 2217097687370000658, guid: d744063a4fa4f28439b79fb468cfd925, type: 3}
+  enemyHitParticleOffset: {x: 0, y: 0, z: 0}
+  enemyHitParticleRotationZ: 0
   zRotationOffset: 0
   minDirectionSqrMagnitude: 0.000001
 --- !u!70 &3731118421688788880

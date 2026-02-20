@@ -51,7 +51,7 @@ public class LivesUI : MonoBehaviour
             return;
         }
 
-        livesLabel.text = $"Lives: {lives}";
+        livesLabel.text = $"{lives}";
     }
 
     private void RefreshLabel()

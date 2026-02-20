@@ -12,8 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 768df7b6b8867204f81dadcc7f02ec0b, type: 3}
   m_Name: Wave2
   m_EditorClassIdentifier: Assembly-CSharp::WaveConfig
-  enemyPrefab: {fileID: 1359719234936920997, guid: 0a08a2edd3063cd468b6735b18073b49, type: 3}
-  count: 3
-  spawnInterval: 0.5
+  enemies:
+  - enemyType: 0
+    count: 1
+  - enemyType: 1
+    count: 1
+  spawnInterval: 5
   startDelay: 0
-  waveDuration: 20
+  waveDuration: 30
+  legacyEnemyPrefab: {fileID: 1359719234936920997, guid: 0a08a2edd3063cd468b6735b18073b49, type: 3}
+  legacyCount: 3

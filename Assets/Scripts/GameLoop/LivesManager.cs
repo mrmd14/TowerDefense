@@ -3,6 +3,10 @@ using UnityEngine;
 
 public class LivesManager : MonoBehaviour
 {
+    [Header("Gameplay Data")]
+    [SerializeField] private GamePlayData gamePlayData;
+
+    [Header("Fallback")]
     [SerializeField] private int startingLives = 20;
     [SerializeField] private EnemySpawner enemySpawner;
 
@@ -15,7 +19,8 @@ public class LivesManager : MonoBehaviour
 
     private void Awake()
     {
-        startingLives = Mathf.Max(1, startingLives);
+        int configuredStartingLives = gamePlayData != null ? gamePlayData.StartingLives : startingLives;
+        startingLives = Mathf.Max(1, configuredStartingLives);
         Lives = startingLives;
 
         if (enemySpawner == null)
@@ -70,7 +75,7 @@ public class LivesManager : MonoBehaviour
 
         if (enemy != null)
         {
-            CentralObjectPool.DespawnEnemy(enemy);
+            CentralObjectPool.Despawn(enemy.gameObject);
         }
 
         if (Lives > 0)
