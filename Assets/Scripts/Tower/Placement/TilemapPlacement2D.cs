@@ -410,7 +410,10 @@ public class TilemapPlacement2D : MonoBehaviour
 
         Vector3 blockedCellCenter = blockedTilemap.GetCellCenterWorld(blockedCell);
         float halfCellHeight = Mathf.Abs(blockedTilemap.layoutGrid.cellSize.y) * 0.5f;
-        float effectiveMargin = Mathf.Min(blockedTileYMargin, halfCellHeight);
+        // Only allow bottom-edge margin when the tile directly below is not blocked.
+        Vector3Int belowCell = blockedCell + Vector3Int.down;
+        bool belowIsBlocked = blockedTilemap.HasTile(belowCell);
+        float effectiveMargin = belowIsBlocked ? 0f : Mathf.Min(blockedTileYMargin, halfCellHeight);
         float bottomEdgeY = blockedCellCenter.y - halfCellHeight;
         float distanceFromBottom = worldPosition.y - bottomEdgeY;
 
